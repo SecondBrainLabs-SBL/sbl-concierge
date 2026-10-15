@@ -1,0 +1,98 @@
+{
+ "id": "refuser",
+ "description": "Just looking; says not yet and stop; later actions must not follow a stop.",
+ "start": "https://sbl.so/",
+ "steps": [
+  {
+   "do": "say",
+   "text": "i'm just looking around",
+   "tags": [],
+   "expect": {
+    "class": "chitchat",
+    "noNav": true,
+    "noSignup": true
+   }
+  },
+  {
+   "do": "say",
+   "text": "what does the pricing look like",
+   "tags": [],
+   "expect": {
+    "class": "inform",
+    "noSignup": true
+   }
+  },
+  {
+   "do": "say",
+   "text": "can i try it for free",
+   "tags": [],
+   "expect": {
+    "class": "inform",
+    "noSignup": true
+   }
+  },
+  {
+   "do": "say",
+   "text": "not yet",
+   "tags": [],
+   "expect": {
+    "class": "chitchat",
+    "noNav": true,
+    "noSignup": true,
+    "stop": true
+   }
+  },
+  {
+   "do": "wait",
+   "ms": 15000,
+   "tags": [
+    "afterStop"
+   ],
+   "expect": {
+    "noNav": true,
+    "noSignup": true
+   }
+  },
+  {
+   "do": "say",
+   "text": "ok what integrations do you have",
+   "tags": [],
+   "expect": {
+    "class": "inform",
+    "noSignup": true
+   }
+  },
+  {
+   "do": "say",
+   "text": "don't take me anywhere, just tell me",
+   "tags": [],
+   "expect": {
+    "class": "inform",
+    "noNav": true,
+    "noSignup": true
+   }
+  },
+  {
+   "do": "say",
+   "text": "stop",
+   "tags": [],
+   "expect": {
+    "class": "chitchat",
+    "noNav": true,
+    "noSignup": true,
+    "stop": true
+   }
+  },
+  {
+   "do": "wait",
+   "ms": 10000,
+   "tags": [
+    "afterStop"
+   ],
+   "expect": {
+    "noNav": true,
+    "noSignup": true
+   }
+  }
+ ]
+}

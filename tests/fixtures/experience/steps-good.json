@@ -1,0 +1,135 @@
+{
+ "persona": "good",
+ "run": 1,
+ "steps": [
+  {
+   "do": "say",
+   "tags": [],
+   "expect": {
+    "class": "chitchat"
+   },
+   "lines": [
+    {
+     "atMs": 900,
+     "text": "Hi there."
+    }
+   ],
+   "actions": [],
+   "navigations": [],
+   "dockExists": true,
+   "url": "https://sbl.so/",
+   "shellUrl": null,
+   "urlStatus": 200,
+   "overlap": false,
+   "text": "hi",
+   "firstLineMs": 900,
+   "busyMs": 1200,
+   "modelCalls": 1
+  },
+  {
+   "do": "say",
+   "tags": [],
+   "expect": {
+    "class": "inform",
+    "noNav": true,
+    "decisionGroup": "g",
+    "decisionPattern": "\\b(Starter|Pro|Elite)\\b",
+    "recalls": [
+     "\\$189"
+    ]
+   },
+   "lines": [
+    {
+     "atMs": 900,
+     "text": "Pro is the fit."
+    },
+    {
+     "atMs": 1600,
+     "text": "It is $189 a month."
+    }
+   ],
+   "actions": [],
+   "navigations": [],
+   "dockExists": true,
+   "url": "https://sbl.so/",
+   "shellUrl": null,
+   "urlStatus": 200,
+   "overlap": false,
+   "text": "which plan?",
+   "firstLineMs": 1200,
+   "busyMs": 6000,
+   "modelCalls": 2,
+   "urlBefore": "https://sbl.so/"
+  },
+  {
+   "do": "say",
+   "tags": [],
+   "expect": {
+    "class": "inform",
+    "decisionGroup": "g",
+    "decisionPattern": "\\b(Starter|Pro|Elite)\\b"
+   },
+   "lines": [
+    {
+     "atMs": 900,
+     "text": "Still Pro."
+    }
+   ],
+   "actions": [],
+   "navigations": [],
+   "dockExists": true,
+   "url": "https://sbl.so/",
+   "shellUrl": null,
+   "urlStatus": 200,
+   "overlap": false,
+   "text": "again?",
+   "firstLineMs": 1000,
+   "busyMs": 4000,
+   "modelCalls": 1
+  },
+  {
+   "do": "say",
+   "tags": [],
+   "expect": {
+    "stop": true,
+    "noSignup": true
+   },
+   "lines": [
+    {
+     "atMs": 900,
+     "text": "Okay, stopping."
+    }
+   ],
+   "actions": [
+    {
+     "type": "say",
+     "target": ""
+    }
+   ],
+   "navigations": [],
+   "dockExists": true,
+   "url": "https://sbl.so/",
+   "shellUrl": null,
+   "urlStatus": 200,
+   "overlap": false,
+   "text": "stop",
+   "firstLineMs": 800,
+   "busyMs": 900,
+   "modelCalls": 1
+  },
+  {
+   "do": "wait",
+   "ms": 10000,
+   "tags": [
+    "afterStop"
+   ],
+   "expect": {},
+   "lines": [],
+   "actions": [],
+   "navigations": [],
+   "dockExists": true,
+   "url": "https://sbl.so/",
+   "urlStatus": 200
+  }
+ ]
+}

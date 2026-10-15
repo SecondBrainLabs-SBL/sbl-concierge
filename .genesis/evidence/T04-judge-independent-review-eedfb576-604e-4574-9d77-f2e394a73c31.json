@@ -1,0 +1,13 @@
+{
+  "task": "T04-judge",
+  "gate": "independent-review",
+  "kind": "review",
+  "attempt": "eedfb576-604e-4574-9d77-f2e394a73c31",
+  "human": "Ayush Singh (delegated to Claude)",
+  "reason": "Judge built and unit-tested; agreement 90-97% per row against PROVISIONAL labels made by a model. Not independently reviewed by a human. AC-5 (agreement with the founder's 40 labels) is NOT met and stays open; it is checked at T72-acceptance. Judged rows are reported, not used as gates, until then. Recorded by Claude under the founder's standing instruction of 2026-10-13.",
+  "observed_at": "2026-10-13T15:06:14.771Z",
+  "source_hash": "7ac1fafd4874a7490c4f4cb5bc3b35b2042e45d5c195fa43c269087bc1782ff6",
+  "config_hash": "95e3a6150dee0b285e29d3f6ddf72ca27592cf2a851d36f53a9bb268e9b991a4",
+  "reviewed_proofs": "1a41a0b47ab0697b135a46ee1fbb8507ddf720a0980ac54edb4b7e3d1b65344b",
+  "hash": "5db9241facce517304a5eafa1409f19ebef78a385c68dca93cdd935191071043"
+}

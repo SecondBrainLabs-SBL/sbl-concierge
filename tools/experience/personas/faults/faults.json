@@ -1,0 +1,17 @@
+{
+ "id": "faults",
+ "description": "The model is unavailable, capped, down and slow in turn: every question gets one honest line within its time, nothing moves; then the fault clears and a question is answered normally. Needs the server started with ALLOW_FAULTS=1.",
+ "start": "https://sbl.so/",
+ "steps": [
+  { "do": "fault", "code": "unavailable", "tags": [], "expect": {} },
+  { "do": "say", "text": "what does the pricing look like", "tags": [], "expect": { "mustReply": true, "maxLines": 1, "noNav": true, "replyWithinMs": 3000, "honest": "unavailable|try again" } },
+  { "do": "fault", "code": "capped", "tags": [], "expect": {} },
+  { "do": "say", "text": "do you have anything for agencies", "tags": [], "expect": { "mustReply": true, "maxLines": 1, "noNav": true, "replyWithinMs": 3000, "honest": "lot of questions|ask again" } },
+  { "do": "fault", "code": "down", "tags": [], "expect": {} },
+  { "do": "say", "text": "how does the linkedin outreach work", "tags": [], "expect": { "mustReply": true, "maxLines": 1, "noNav": true, "replyWithinMs": 17000, "honest": "unavailable|try again" } },
+  { "do": "fault", "code": "slow", "tags": [], "expect": {} },
+  { "do": "say", "text": "which integrations do you support", "tags": [], "expect": { "mustReply": true, "maxLines": 1, "noNav": true, "replyWithinMs": 17000, "honest": "unavailable|try again" } },
+  { "do": "fault", "code": null, "tags": [], "expect": {} },
+  { "do": "say", "text": "what does the pricing look like now", "tags": [], "expect": { "mustReply": true, "class": "inform", "noSignup": true } }
+ ]
+}

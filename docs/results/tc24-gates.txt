@@ -1,0 +1,12 @@
+FAIL e1: E1.p50=1565 (want <= 1500); E1.p95=3081.3333333333335 (want <= 3000)
+PASS e2: 4 rows meet target in <original-checkout>/var/experience/latest
+PASS e3: 1 rows meet target in <original-checkout>/var/experience/latest
+PASS e4: 1 rows meet target in <original-checkout>/var/experience/latest
+PASS e5: 3 rows meet target in <original-checkout>/var/experience/latest
+FAIL e6: E6.consistency=0.6666666666666666 (want >= 0.9)
+PASS e7: 3 rows meet target in <original-checkout>/var/experience/latest
+PASS e8: 3 rows meet target in <original-checkout>/var/experience/latest
+PASS e9: 2 rows meet target in <original-checkout>/var/experience/latest
+PASS no-worse: no row worse beyond noise
+PASS founder-replay: 0 silent, 0 over max, 0 nav/signup violations in <original-checkout>/var/experience/latest
+PASS faults: 0 silent, 0 late, 0 honest misses, 0 unrequested navigations in <original-checkout>/var/experience/latest

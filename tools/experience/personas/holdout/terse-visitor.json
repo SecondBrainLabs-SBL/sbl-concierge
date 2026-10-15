@@ -1,0 +1,89 @@
+{
+  "id": "terse-visitor",
+  "description": "One-word messages, then moves around the page on his own and asks about what is on screen.",
+  "start": "https://sbl.so/",
+  "steps": [
+    {
+      "do": "say",
+      "text": "hi",
+      "tags": [],
+      "expect": {
+        "class": "chitchat",
+        "maxLines": 1,
+        "noNav": true,
+        "noSignup": true
+      }
+    },
+    {
+      "do": "say",
+      "text": "price",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true
+      }
+    },
+    {
+      "do": "say",
+      "text": "plans?",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true
+      }
+    },
+    {
+      "do": "say",
+      "text": "agencies",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true
+      }
+    },
+    {
+      "do": "goto",
+      "url": "https://sbl.so/whatsapp/",
+      "tags": [],
+      "expect": {
+        "maxLines": 2,
+        "noSignup": true
+      }
+    },
+    {
+      "do": "scroll",
+      "y": 800,
+      "tags": [],
+      "expect": {
+        "noNav": true,
+        "noSignup": true
+      }
+    },
+    {
+      "do": "say",
+      "text": "what is that part about",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noNav": true,
+        "noSignup": true,
+        "recalls": [
+          "whatsapp|message|channel"
+        ]
+      }
+    },
+    {
+      "do": "say",
+      "text": "linkedin versus this?",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true,
+        "recalls": [
+          "linkedin",
+          "whatsapp"
+        ]
+      }
+    }
+  ]
+}

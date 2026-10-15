@@ -1,0 +1,70 @@
+{
+ "id": "navigator",
+ "description": "Asks to be taken to specific pages; each must land on the right page with the dock alive.",
+ "start": "https://sbl.so/",
+ "steps": [
+  {
+   "do": "say",
+   "text": "take me to the pricing page",
+   "tags": [],
+   "expect": {
+    "class": "navigate",
+    "landsOn": "/pricing/?(\\?|#|$)"
+   }
+  },
+  {
+   "do": "say",
+   "text": "now the case studies",
+   "tags": [],
+   "expect": {
+    "class": "navigate",
+    "landsOn": "/case-study/"
+   }
+  },
+  {
+   "do": "say",
+   "text": "show me the agency page",
+   "tags": [],
+   "expect": {
+    "class": "navigate",
+    "landsOn": "/agency/"
+   }
+  },
+  {
+   "do": "say",
+   "text": "go to the FAQ",
+   "tags": [],
+   "expect": {
+    "class": "navigate",
+    "landsOn": "/faq/"
+   }
+  },
+  {
+   "do": "say",
+   "text": "open the MCP page",
+   "tags": [],
+   "expect": {
+    "class": "navigate",
+    "landsOn": "/mcp/"
+   }
+  },
+  {
+   "do": "say",
+   "text": "and the API page",
+   "tags": [],
+   "expect": {
+    "class": "navigate",
+    "landsOn": "/api/"
+   }
+  },
+  {
+   "do": "say",
+   "text": "ok back to home",
+   "tags": [],
+   "expect": {
+    "class": "navigate",
+    "landsOn": "^https://sbl\\.so/?(\\?.*)?$"
+   }
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+  "task": "T10-turn",
+  "gate": "turn",
+  "kind": "command",
+  "attempt": "559e2bc8-2d66-4292-8caf-8bcc56712f5c",
+  "command": "node --test tests/turn.test.cjs",
+  "started_at": "2026-10-13T15:06:23.920Z",
+  "observed_at": "2026-10-13T15:06:37.578Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "✔ pure: shapes, budgets and tool sets (1.611542ms)\n✔ the first step offers only say, ask_user and done; the shape of the line decides what follows (7.508833ms)\n✔ then:\"end\" ends the run after one line: nothing else of the script runs (0.91075ms)\n✔ a show turn: the second say is the closing line and ends it; a third line is impossible (0.951ms)\n✔ show budget: after 3 actions only a closing line or done is on offer; a 4th action is refused and the turn ends (182.150208ms)\n✔ a do turn gets 12 actions; the 13th is not on offer (1.44025ms)\n✔ do without matching evidence is refused and the turn ends with a line (1.015875ms)\n✔ a message during a run cancels it: the new turn starts after the old run settles, with the old turn's context (40.487375ms)\n✔ a tool that is past its first check when the message arrives never runs its body (generation check after the save) (53.316375ms)\n(node:75006) MaxListenersExceededWarning: Possible EventTarget memory leak detected. 11 click listeners added to EventTarget. MaxListeners is 10. Use events.setMaxListeners() to increase limit\n(Use `node --trace-warnings ...` to show where the warning was created)\n✔ an action already executing when the message arrives completes, but nothing starts after it (84.703917ms)\n✔ a message during a pending private field releases it, closes the box, and gets a reply (66.171625ms)\n✔ refused line: the first refusal warns the model, the second ends the turn (apology only if something was said, else the fallback) (29.251417ms)\n✔ crash, failed model call, engine budget, watchdog: exactly one line each when nothing was said (67.030333ms)\n✔ a turn that already spoke gets exactly one apology line when it crashes or runs out of time (453.78275ms)\n✔ done text is spoken when this turn said nothing, even if an earlier turn of the task spoke (50.021583ms)\n✔ the answer to ask_user ends one turn as asked and opens the next; the trace says so (45.062458ms)\n✔ turn ends map to the trace statuses: handed_off, cannot, stopped (49.10275ms)\n✔ running is never stale: a run that fails to start, a run winding down, and a run that ended all leave it clear (67.809708ms)\n✔ a turn that navigates resumes as the SAME turn on the next page, with what is left of its budget (969.128709ms)\n✔ the backoff before a model retry is abortable (90.78425ms)\n✔ the engine limit is exact: maxSteps is the remaining budget minus one (1.690584ms)\n✔ B1: a message during an in-flight navigation is stored at once; the next page resumes THAT message as a turn that owes its first line (1018.920375ms)\n✔ B1: Stop during an in-flight navigation clears the stored task at once (163.080375ms)\n✔ B1: the tail of a dead turn's tool never overwrites the stored task (108.939666ms)\n✔ B2: time spent on a private field does not count against a do turn (3309.860459ms)\n✔ B2: a pending confirmation card is not the turn's time either; the wait rides the snapshot (3311.511083ms)\n✔ S5: Stop is a refusal; a message after a stopped turn gets no 'you were working on' preface (51.86375ms)\n✔ S5: a bare 'no' / 'not yet' is recorded as a refusal by the harness, with no help from the model (4.5055ms)\n✔ S5: the visitor taking over the page is a refusal too (648.66425ms)\n✔ S6a/b: the line that answers an answer is not a re-statement; the answered question is cleared (194.389958ms)\n✔ S6d: after an action a re-worded closing line is fine; without one it is still refused (5.593375ms)\n✔ S7: a turn resumed after a human step is active again, has its deadline armed, and the human wait is not its time (1504.698291ms)\n✔ S8: after the pre-emption cap the old run's late settle does not tear down the new turn (368.736209ms)\n✔ S9: a message that arrives during ask_user's own save leaves no stale waiter (55.603542ms)\n✔ S10: the engine's 'no text provided' stand-in for an empty done is treated as empty (3.611958ms)\n✔ S11: the wall after a line speaks one apology and stores no question the visitor never saw; a watchdog during ask_user's save is not a second line (190.830791ms)\nℹ tests 36\nℹ suites 0\nℹ pass 36\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 13284.9455\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "9b3673533a2a32959c7873f5e924d17c910e79e3",
+    "dirty": true
+  },
+  "source_hash": "7ac1fafd4874a7490c4f4cb5bc3b35b2042e45d5c195fa43c269087bc1782ff6",
+  "before_hash": "7ac1fafd4874a7490c4f4cb5bc3b35b2042e45d5c195fa43c269087bc1782ff6",
+  "config_hash": "ab9bc0605365a1b1231668e5bc7482737e64b5319e144eee4c9c134fe62b68f9",
+  "environment": {
+    "node": "v26.8.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "5156e7f693c2874f923270d2859e052d19feb71a707380fb42169eeaa86912ba"
+}

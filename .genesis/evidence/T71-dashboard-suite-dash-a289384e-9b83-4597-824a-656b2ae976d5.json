@@ -1,0 +1,30 @@
+{
+  "task": "T71-dashboard-suite",
+  "gate": "dash",
+  "kind": "command",
+  "attempt": "a289384e-9b83-4597-824a-656b2ae976d5",
+  "command": "node tools/experience/gate.mjs dashboard",
+  "started_at": "2026-10-15T10:55:37.551Z",
+  "observed_at": "2026-10-15T10:55:41.331Z",
+  "exit_code": 1,
+  "signal": null,
+  "stdout": "FAIL dashboard: not implemented\n",
+  "stderr": "",
+  "failure": "command-failed",
+  "receipt": null,
+  "revision": {
+    "commit": "f0bf21f57758ceea1a3d7f9f97749f050b45161e",
+    "dirty": true
+  },
+  "source_hash": "c373cf82dda8378b68b496caa1e30330b541f0bf9007acc7b362c584d214a7ed",
+  "before_hash": "c373cf82dda8378b68b496caa1e30330b541f0bf9007acc7b362c584d214a7ed",
+  "config_hash": "be420e6ed5fa670e94c1122fd8c9dbe1d01b7942585f7da68c6cf515f28dbccb",
+  "environment": {
+    "node": "v26.8.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "5c7c934232238b15a9188abcdbe1746cabbda1faed4394af75a1a39f2710fc36"
+}

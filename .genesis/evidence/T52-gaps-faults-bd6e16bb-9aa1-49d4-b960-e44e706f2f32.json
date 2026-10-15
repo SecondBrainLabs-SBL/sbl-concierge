@@ -1,0 +1,30 @@
+{
+  "task": "T52-gaps",
+  "gate": "faults",
+  "kind": "command",
+  "attempt": "bd6e16bb-9aa1-49d4-b960-e44e706f2f32",
+  "command": "node tools/experience/gate.mjs faults",
+  "started_at": "2026-10-15T04:15:30.212Z",
+  "observed_at": "2026-10-15T04:15:32.608Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "PASS faults: 0 silent, 0 late, 0 honest misses, 0 unrequested navigations in /path/to/sbl-concierge/var/experience/latest\n",
+  "stderr": "",
+  "failure": "source-mutated",
+  "receipt": null,
+  "revision": {
+    "commit": "3be3c037efe535dacfe85a5de1003f5e1dc46373",
+    "dirty": true
+  },
+  "source_hash": "c06c6bebf58cd5918b2a10acd3f22ec07122ce316da5fc34601b0c613a87b554",
+  "before_hash": "4a982f23733d6b3d2599bd25c589450a039c495ac077fe5f58755ecc268f2351",
+  "config_hash": "c1d35c3c04f6913df3b451bae4e81a292891f290564d72149d5b6bd45daa1100",
+  "environment": {
+    "node": "v26.8.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "7dc03f374c0dac32c1852c50ae27dac714f6aa20dfb646e92db6b194af34af1f"
+}

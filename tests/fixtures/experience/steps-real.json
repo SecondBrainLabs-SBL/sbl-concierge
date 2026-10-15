@@ -1,0 +1,152 @@
+{
+ "persona": "real-baseline",
+ "run": 1,
+ "steps": [
+  {
+   "do": "say",
+   "tags": [],
+   "expect": {
+    "class": "navigate",
+    "landsOn": "/pricing/",
+    "maxLines": 2
+   },
+   "lines": [
+    {
+     "atMs": 11812,
+     "text": "You’re on the pricing page now, with Starter at $99/month and Pro at $189/month."
+    }
+   ],
+   "actions": [
+    {
+     "type": "navigate",
+     "target": "/pricing/"
+    },
+    {
+     "type": "resume",
+     "target": "/pricing/"
+    },
+    {
+     "type": "say",
+     "target": ""
+    },
+    {
+     "type": "point",
+     "target": "Pro $189"
+    },
+    {
+     "type": "point-align",
+     "target": "Pro $189 <- pricing page now starter (corrected from Start T"
+    }
+   ],
+   "navigations": [
+    "https://sbl.so/pricing/"
+   ],
+   "dockExists": true,
+   "url": "https://sbl.so/pricing/",
+   "shellUrl": null,
+   "urlStatus": 200,
+   "overlap": false,
+   "text": "take me to pricing",
+   "firstLineMs": 11812,
+   "busyMs": 28075,
+   "modelCalls": 4,
+   "modelCallMs": [
+    2336,
+    2944,
+    2654,
+    2547
+   ]
+  },
+  {
+   "do": "say",
+   "tags": [],
+   "expect": {
+    "class": "inform",
+    "noNav": true
+   },
+   "lines": [
+    {
+     "atMs": 5168,
+     "text": "Elite is the invite-only scale tier at $997 per month, with seats sized to your requirement and highly personalized outreach journeys."
+    },
+    {
+     "atMs": 31501,
+     "text": "SBL connects your outreach to the systems your SDR team already uses, including HubSpot, Salesforce, Pipedrive, Slack, and custom API workflows."
+    }
+   ],
+   "actions": [
+    {
+     "type": "say",
+     "target": ""
+    },
+    {
+     "type": "navigate",
+     "target": "/"
+    },
+    {
+     "type": "resume",
+     "target": "/"
+    },
+    {
+     "type": "say",
+     "target": ""
+    },
+    {
+     "type": "point",
+     "target": "From solo founders to agencies in 10+ countries, teams use S"
+    },
+    {
+     "type": "point-align",
+     "target": "From solo founders to agencies in 10+ co <- sbl connect outr"
+    },
+    {
+     "type": "point",
+     "target": "From solo founders to agencies in 10+ countries, teams use S"
+    },
+    {
+     "type": "point-align",
+     "target": "From solo founders to agencies in 10+ co <- sbl connect outr"
+    },
+    {
+     "type": "point",
+     "target": "From solo founders to agencies in 10+ countries, teams use S"
+    },
+    {
+     "type": "point-align",
+     "target": "From solo founders to agencies in 10+ co <- sbl connect outr"
+    },
+    {
+     "type": "point",
+     "target": "From solo founders to agencies in 10+ countries, teams use S"
+    },
+    {
+     "type": "point-align",
+     "target": "From solo founders to agencies in 10+ co <- sbl connect outr"
+    }
+   ],
+   "navigations": [
+    "https://sbl.so/#integrations"
+   ],
+   "dockExists": true,
+   "url": "https://sbl.so/#integrations",
+   "shellUrl": null,
+   "urlStatus": 200,
+   "overlap": false,
+   "text": "what do you integrate with?",
+   "firstLineMs": 5168,
+   "busyMs": 81810,
+   "modelCalls": 9,
+   "modelCallMs": [
+    4037,
+    10630,
+    2859,
+    4396,
+    3508,
+    4050,
+    5187,
+    4012,
+    3938
+   ]
+  }
+ ]
+}

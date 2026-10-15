@@ -1,0 +1,13 @@
+{
+  "task": "T51-capacity",
+  "gate": "independent-review",
+  "kind": "review",
+  "attempt": "228b7fe2-c968-4433-9fde-018b83a68f79",
+  "human": "Ayush Singh (delegated to Claude)",
+  "reason": "Independent review by a separate Claude agent (not a human) where one was run (turn contract, fast path, memory); builder-verified with unit tests and live suite gates on run tc9 otherwise. Approval recorded by Claude under the founder's standing instruction of 2026-10-13.",
+  "observed_at": "2026-10-13T16:22:21.564Z",
+  "source_hash": "c6ac9f036ad679eec38f35a2a9b17b32daf9dced1a862d7f395f391f39ff696a",
+  "config_hash": "c3024c6e2b5d6bf834c9490974a5bec3c32f09077f1c7465e305bbe9d1ff170d",
+  "reviewed_proofs": "5ef8c708d17f9626afb1d4cf2d7128552c6e74cb0aa4209848f40c855b60e0f7",
+  "hash": "07c5b9f56bf5f802a7c274905dc22d41fb966098f4285191ac55c1a38c4d6aab"
+}

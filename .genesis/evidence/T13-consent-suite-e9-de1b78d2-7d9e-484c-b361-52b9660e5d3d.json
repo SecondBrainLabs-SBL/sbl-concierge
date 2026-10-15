@@ -1,0 +1,30 @@
+{
+  "task": "T13-consent",
+  "gate": "suite-e9",
+  "kind": "command",
+  "attempt": "de1b78d2-7d9e-484c-b361-52b9660e5d3d",
+  "command": "node tools/experience/gate.mjs e9",
+  "started_at": "2026-10-13T15:07:16.929Z",
+  "observed_at": "2026-10-13T15:07:17.752Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "PASS e9: 2 rows meet target in /path/to/sbl-concierge/var/experience/latest\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "9b3673533a2a32959c7873f5e924d17c910e79e3",
+    "dirty": true
+  },
+  "source_hash": "8a8cf2809fe08d3b9fcbd0f909df896df8feaaec5ca1e8430325bb7363213b5d",
+  "before_hash": "8a8cf2809fe08d3b9fcbd0f909df896df8feaaec5ca1e8430325bb7363213b5d",
+  "config_hash": "be8e67d4b58529c5c8b124b930353bc407a23b2f8d16b4fe663ccd4fd7e81f8c",
+  "environment": {
+    "node": "v26.8.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "6e611b25ff136f897db920d23075d49502b7a37106cf25dfb9be9ce721f9af63"
+}

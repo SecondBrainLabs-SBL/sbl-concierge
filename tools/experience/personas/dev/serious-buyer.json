@@ -1,0 +1,100 @@
+{
+  "id": "serious-buyer",
+  "description": "Gives facts, asks for a plan, corrects a fact; recommendation must be consistent unless an input changed.",
+  "start": "https://sbl.so/",
+  "steps": [
+    {
+      "do": "say",
+      "text": "We're a 12 person agency running outbound for clients. We have 3 SDRs and use HubSpot.",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noNav": true,
+        "noSignup": true
+      }
+    },
+    {
+      "do": "say",
+      "text": "Which plan fits us?",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true,
+        "decisionGroup": "plan-before",
+        "decisionPattern": "\\b(Starter|Pro|Elite)\\b"
+      }
+    },
+    {
+      "do": "say",
+      "text": "Remind me, which plan did you pick for us? Name only.",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noNav": true,
+        "noSignup": true,
+        "decisionGroup": "plan-before",
+        "decisionPattern": "\\b(Starter|Pro|Elite)\\b"
+      }
+    },
+    {
+      "do": "say",
+      "text": "What does that cost per month?",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true,
+        "recalls": [
+          "\\$\\s?\\d"
+        ]
+      }
+    },
+    {
+      "do": "say",
+      "text": "Does it connect to HubSpot?",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true,
+        "recalls": [
+          "HubSpot"
+        ]
+      }
+    },
+    {
+      "do": "say",
+      "text": "Correction: we have 8 SDRs, not 3.",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noNav": true,
+        "noSignup": true,
+        "recalls": [
+          "\\b(8|eight)\\b"
+        ]
+      }
+    },
+    {
+      "do": "say",
+      "text": "So which plan now?",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true,
+        "decisionGroup": "plan-after",
+        "decisionPattern": "\\b(Starter|Pro|Elite)\\b"
+      }
+    },
+    {
+      "do": "say",
+      "text": "One more time, just the plan name for 8 SDRs.",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noNav": true,
+        "noSignup": true,
+        "decisionGroup": "plan-after",
+        "decisionPattern": "\\b(Starter|Pro|Elite)\\b"
+      }
+    }
+  ]
+}

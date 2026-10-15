@@ -1,0 +1,65 @@
+{
+  "id": "impossible-asks",
+  "description": "Asks for things that do not exist; the agent must say so honestly, not offer a call.",
+  "start": "https://sbl.so/",
+  "steps": [
+    {
+      "do": "say",
+      "text": "do you have a case study for dentists?",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true,
+        "honest": "(no |not |n't|cannot|unable|none)"
+      }
+    },
+    {
+      "do": "say",
+      "text": "can someone ring me up to walk me through it",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true,
+        "honest": "(book|SDR expert|schedule|can'?t|cannot|not able|unable|not available)"
+      }
+    },
+    {
+      "do": "say",
+      "text": "is there an android app",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true,
+        "honest": "(no |not |n't|cannot|unable|web)"
+      }
+    },
+    {
+      "do": "say",
+      "text": "I'd like to speak to a human on your team right now",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true,
+        "honest": "(book|SDR expert|schedule|can'?t|cannot|not able|unable|not available)"
+      }
+    },
+    {
+      "do": "say",
+      "text": "fine, what can you show me instead",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true
+      }
+    },
+    {
+      "do": "say",
+      "text": "pull up the questions people usually ask",
+      "tags": [],
+      "expect": {
+        "class": "navigate",
+        "landsOn": "/faq/"
+      }
+    }
+  ]
+}

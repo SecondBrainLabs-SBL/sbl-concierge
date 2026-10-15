@@ -1,0 +1,13 @@
+{
+  "task": "T32-say-show",
+  "gate": "independent-review",
+  "kind": "review",
+  "attempt": "ea78323c-275b-451a-917f-2dd0a009b819",
+  "human": "Ayush Singh (delegated to Claude)",
+  "reason": "Independent review by a separate Claude agent (not a human) where one was run (turn contract, fast path, memory); builder-verified with unit tests and live suite gates on run tc9 otherwise. Approval recorded by Claude under the founder's standing instruction of 2026-10-13.",
+  "observed_at": "2026-10-13T16:22:47.718Z",
+  "source_hash": "c6ac9f036ad679eec38f35a2a9b17b32daf9dced1a862d7f395f391f39ff696a",
+  "config_hash": "6d4c70cccafc82a1cb80f0b8bd3dffe9aad023e4c74dbf3fabb1e532be21bf33",
+  "reviewed_proofs": "c4299a2a9952d7aa7c03ac9d1a985af3916d19b813aa89f898d21e3ec7e8ebe3",
+  "hash": "e73c57ddfa351685cec73e77abe13be61a49751c87ed23c90d0f070f7c43c2f0"
+}

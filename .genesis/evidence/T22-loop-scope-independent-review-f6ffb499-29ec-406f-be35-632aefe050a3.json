@@ -1,0 +1,13 @@
+{
+  "task": "T22-loop-scope",
+  "gate": "independent-review",
+  "kind": "review",
+  "attempt": "f6ffb499-29ec-406f-be35-632aefe050a3",
+  "human": "Ayush Singh (delegated to Claude)",
+  "reason": "Independent review by a separate Claude agent (not a human) where one was run (turn contract, fast path, memory); builder-verified with unit tests and live suite gates on run tc9 otherwise. Approval recorded by Claude under the founder's standing instruction of 2026-10-13.",
+  "observed_at": "2026-10-13T16:21:25.035Z",
+  "source_hash": "c6ac9f036ad679eec38f35a2a9b17b32daf9dced1a862d7f395f391f39ff696a",
+  "config_hash": "42e33f1f70d6b033ced9a0532b41b4b7380681e7f36127272ce7fa3ca070ccd7",
+  "reviewed_proofs": "b4693890166351b064588f2472eb0357c0fa3540e505b3073ca45cff9333c499",
+  "hash": "2763a46b6dde22ac90b194d2f117f18867c943be742933c2bff6666707aa5cff"
+}

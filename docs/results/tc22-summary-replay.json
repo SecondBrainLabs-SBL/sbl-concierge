@@ -1,0 +1,27 @@
+{
+ "out": "<original-checkout>/var/experience/tc22",
+ "repo": "<original-checkout>",
+ "set": "replay",
+ "runs": 1,
+ "wallMs": 203972,
+ "jobs": 1,
+ "failed": 0,
+ "modelCalls": 24,
+ "timeouts": 0,
+ "cost": {
+  "modelEventsWithTokens": 29,
+  "promptTokens": 525644,
+  "cachedTokens": 378904,
+  "completionTokens": 3734
+ },
+ "perRun": [
+  {
+   "s": "replay",
+   "id": "founder-2026-10-12",
+   "n": 1,
+   "wallMs": 203972,
+   "modelCalls": 24,
+   "timeouts": 0
+  }
+ ]
+}

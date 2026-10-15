@@ -1,0 +1,13 @@
+{
+  "task": "T21-direct",
+  "gate": "independent-review",
+  "kind": "review",
+  "attempt": "d8b4ff07-05a8-4241-a296-9c5d1ee31767",
+  "human": "Ayush Singh (delegated to Claude)",
+  "reason": "Independent review by a separate Claude agent (not a human) where one was run (turn contract, fast path, memory); builder-verified with unit tests and live suite gates on run tc9 otherwise. Approval recorded by Claude under the founder's standing instruction of 2026-10-13.",
+  "observed_at": "2026-10-13T16:21:20.471Z",
+  "source_hash": "c6ac9f036ad679eec38f35a2a9b17b32daf9dced1a862d7f395f391f39ff696a",
+  "config_hash": "ba62ab2481e944af75a8851c72e6414e57d1b92b35ebd5fb25a20dc4e3db3efd",
+  "reviewed_proofs": "e9a160c0f83f428c2ecd29aed9b32e80c5494c734b6471053f3bbfb04501b8e0",
+  "hash": "64b5ae1a5928f0bd467c05397197c498eeae1244c8b4394c0c79613fac88caea"
+}

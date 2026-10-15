@@ -1,0 +1,12 @@
+{
+  "name": "sbl-engine-build",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "node build.mjs" },
+  "dependencies": {
+    "@page-agent/core": "1.12.4",
+    "@page-agent/page-controller": "1.12.4",
+    "esbuild": "0.28.2",
+    "zod": "4.6.5"
+  }
+}

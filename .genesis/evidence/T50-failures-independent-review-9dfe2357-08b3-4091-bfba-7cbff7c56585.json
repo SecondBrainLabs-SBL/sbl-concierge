@@ -1,0 +1,13 @@
+{
+  "task": "T50-failures",
+  "gate": "independent-review",
+  "kind": "review",
+  "attempt": "9dfe2357-08b3-4091-bfba-7cbff7c56585",
+  "human": "Ayush Singh (delegated to Claude)",
+  "reason": "Independent review by a separate Claude agent (not a human) where one was run (turn contract, fast path, memory); builder-verified with unit tests and live suite gates on run tc9 otherwise. Approval recorded by Claude under the founder's standing instruction of 2026-10-13.",
+  "observed_at": "2026-10-13T16:22:15.291Z",
+  "source_hash": "c6ac9f036ad679eec38f35a2a9b17b32daf9dced1a862d7f395f391f39ff696a",
+  "config_hash": "73d6c527d3475def8c36275546318449480168f71b3b947cf2954df87ab69fd4",
+  "reviewed_proofs": "6153722624825de18077f0072299e6be682d0534525f26b182802427da4257e8",
+  "hash": "e7626f696fbbdd4723e3ab946de17f85b5127348163bf78c6d4e448c0233ab9d"
+}

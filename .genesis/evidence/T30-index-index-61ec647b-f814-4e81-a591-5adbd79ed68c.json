@@ -1,0 +1,30 @@
+{
+  "task": "T30-index",
+  "gate": "index",
+  "kind": "command",
+  "attempt": "61ec647b-f814-4e81-a591-5adbd79ed68c",
+  "command": "node --test tests/sitemap.test.cjs",
+  "started_at": "2026-10-13T16:21:28.138Z",
+  "observed_at": "2026-10-13T16:21:29.751Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "✔ classifier table (3.079917ms)\n✔ canonical URL de-duplication matches the router's canonPath (0.838292ms)\n✔ get(): 404 and off-site redirect are not ok, with a reason; on-site redirect records finalUrl (903.169083ms)\n✔ dedupeRedirects rejects the source when its final URL is indexed (1.156084ms)\n✔ off-site links and handoff from a homepage (4.548042ms)\n✔ build failure conditions (1.629667ms)\n✔ check-sitemap: good index passes (1.427459ms)\n✔ check-sitemap: bad indexes fail (2.048708ms)\n✔ check-sitemap --diff: added, removed, retyped, headings (1.423541ms)\nℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 983.531041\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "5a70ba249140dca0726f32e41054f1825a2ddfda",
+    "dirty": true
+  },
+  "source_hash": "c6ac9f036ad679eec38f35a2a9b17b32daf9dced1a862d7f395f391f39ff696a",
+  "before_hash": "c6ac9f036ad679eec38f35a2a9b17b32daf9dced1a862d7f395f391f39ff696a",
+  "config_hash": "6d96e7b4a8bc26af51b077514c7de9fecbbf01d9a5eb1dad513023b7baf9fb2c",
+  "environment": {
+    "node": "v26.8.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "d83db8bfca90469728b3d9115b1cc5812a7ed2e11dbfb437cad3c253d763cf51"
+}

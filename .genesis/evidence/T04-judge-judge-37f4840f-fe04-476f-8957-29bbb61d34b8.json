@@ -1,0 +1,30 @@
+{
+  "task": "T04-judge",
+  "gate": "judge",
+  "kind": "command",
+  "attempt": "37f4840f-fe04-476f-8957-29bbb61d34b8",
+  "command": "node --test tests/judge.test.cjs",
+  "started_at": "2026-10-13T15:06:13.974Z",
+  "observed_at": "2026-10-13T15:06:14.463Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "✔ prompt carries the visitor text, previous turn, lines, actions folded, urls and dock (4.22175ms)\n✔ verdict parsing accepts good output and rejects malformed output (0.768084ms)\n✔ summary arithmetic: pass rate is over judged (non n-a) steps (0.546083ms)\n✔ agreement and Cohen's kappa on hand-computed examples (0.25525ms)\n✔ cache key changes with the step, the prompt, the image or the model, and is stable otherwise (0.505083ms)\nℹ tests 5\nℹ suites 0\nℹ pass 5\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 55.718542\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "9b3673533a2a32959c7873f5e924d17c910e79e3",
+    "dirty": true
+  },
+  "source_hash": "7ac1fafd4874a7490c4f4cb5bc3b35b2042e45d5c195fa43c269087bc1782ff6",
+  "before_hash": "7ac1fafd4874a7490c4f4cb5bc3b35b2042e45d5c195fa43c269087bc1782ff6",
+  "config_hash": "95e3a6150dee0b285e29d3f6ddf72ca27592cf2a851d36f53a9bb268e9b991a4",
+  "environment": {
+    "node": "v26.8.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "07be3cc336e44f9d5e6592d8536666f1856c643bfc0d13c3f042d0946b934e75"
+}

@@ -1,0 +1,73 @@
+{
+  "id": "repeat-asker",
+  "description": "Same question three ways, twice; answers in a group must agree.",
+  "start": "https://sbl.so/",
+  "steps": [
+    {
+      "do": "say",
+      "text": "what's the cheapest plan",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true,
+        "decisionGroup": "cheapest",
+        "decisionPattern": "\\b(Starter|Pro|Elite)\\b"
+      }
+    },
+    {
+      "do": "say",
+      "text": "ok so which is the lowest price option",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true,
+        "decisionGroup": "cheapest",
+        "decisionPattern": "\\b(Starter|Pro|Elite)\\b"
+      }
+    },
+    {
+      "do": "say",
+      "text": "tell me again the entry-level plan, name and price",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true,
+        "decisionGroup": "cheapest",
+        "decisionPattern": "\\b(Starter|Pro|Elite)\\b"
+      }
+    },
+    {
+      "do": "say",
+      "text": "which plan is best for a solo consultant",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true,
+        "decisionGroup": "solo",
+        "decisionPattern": "\\b(Starter|Pro|Elite)\\b"
+      }
+    },
+    {
+      "do": "say",
+      "text": "i work alone, what should i pick",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true,
+        "decisionGroup": "solo",
+        "decisionPattern": "\\b(Starter|Pro|Elite)\\b"
+      }
+    },
+    {
+      "do": "say",
+      "text": "for just me, one person, which tier",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true,
+        "decisionGroup": "solo",
+        "decisionPattern": "\\b(Starter|Pro|Elite)\\b"
+      }
+    }
+  ]
+}

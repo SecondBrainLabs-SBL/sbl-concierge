@@ -1,0 +1,1 @@
+{"name":"page-agent-trial","private":true,"type":"module","dependencies":{"esbuild":"^0.28.2","page-agent":"^1.12.4","playwright":"^1.63.0"}}

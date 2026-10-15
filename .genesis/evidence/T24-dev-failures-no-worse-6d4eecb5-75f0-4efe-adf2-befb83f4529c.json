@@ -1,0 +1,30 @@
+{
+  "task": "T24-dev-failures",
+  "gate": "no-worse",
+  "kind": "command",
+  "attempt": "6d4eecb5-75f0-4efe-adf2-befb83f4529c",
+  "command": "node tools/experience/gate.mjs no-worse",
+  "started_at": "2026-10-15T03:43:39.919Z",
+  "observed_at": "2026-10-15T03:43:45.372Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "PASS no-worse: no row worse beyond noise\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "d661a3d36c70e1df46c2d86ddf0fd3db5cf688a0",
+    "dirty": true
+  },
+  "source_hash": "aa376fe0de04a02391487ef9897b1f61def9a1a8852f547f71851cc95fd960f3",
+  "before_hash": "aa376fe0de04a02391487ef9897b1f61def9a1a8852f547f71851cc95fd960f3",
+  "config_hash": "70cf09b48c6389adf74983db997e474d1234b7fc4eaf094ea5cd474339430a7c",
+  "environment": {
+    "node": "v26.8.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "fa04009ea860eb4dae2453530541b7bcbfc47fa01befc7a6844b0c1a05a31461"
+}

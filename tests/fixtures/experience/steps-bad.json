@@ -1,0 +1,266 @@
+{
+ "persona": "bad",
+ "run": 1,
+ "steps": [
+  {
+   "do": "say",
+   "tags": [],
+   "expect": {
+    "mustReply": true
+   },
+   "lines": [],
+   "actions": [],
+   "navigations": [],
+   "dockExists": true,
+   "url": "https://sbl.so/",
+   "shellUrl": null,
+   "urlStatus": 200,
+   "overlap": false,
+   "text": "hello?",
+   "firstLineMs": null,
+   "busyMs": 20000,
+   "modelCalls": 5
+  },
+  {
+   "do": "say",
+   "tags": [],
+   "expect": {
+    "class": "navigate",
+    "landsOn": "/pricing/"
+   },
+   "lines": [
+    {
+     "atMs": 900,
+     "text": "ok"
+    }
+   ],
+   "actions": [],
+   "navigations": [],
+   "dockExists": true,
+   "url": "https://sbl.so/faq/",
+   "shellUrl": null,
+   "urlStatus": 200,
+   "overlap": false,
+   "text": "go pricing",
+   "firstLineMs": 5000,
+   "busyMs": 20000,
+   "modelCalls": 6
+  },
+  {
+   "do": "say",
+   "tags": [],
+   "expect": {
+    "noNav": true,
+    "maxLines": 2
+   },
+   "lines": [
+    {
+     "atMs": 900,
+     "text": "a"
+    },
+    {
+     "atMs": 1600,
+     "text": "b"
+    },
+    {
+     "atMs": 2300,
+     "text": "c"
+    }
+   ],
+   "actions": [
+    {
+     "type": "navigate",
+     "target": "/pricing/"
+    }
+   ],
+   "navigations": [],
+   "dockExists": true,
+   "url": "https://sbl.so/pricing/",
+   "shellUrl": null,
+   "urlStatus": 200,
+   "overlap": false,
+   "text": "x",
+   "firstLineMs": 900,
+   "busyMs": 3000,
+   "modelCalls": 2,
+   "urlBefore": "https://sbl.so/"
+  },
+  {
+   "do": "say",
+   "tags": [],
+   "expect": {
+    "decisionGroup": "g",
+    "decisionPattern": "\\b(Starter|Pro|Elite)\\b"
+   },
+   "lines": [
+    {
+     "atMs": 900,
+     "text": "Pro, $189."
+    }
+   ],
+   "actions": [],
+   "navigations": [],
+   "dockExists": true,
+   "url": "https://sbl.so/",
+   "shellUrl": null,
+   "urlStatus": 200,
+   "overlap": false,
+   "text": "p1"
+  },
+  {
+   "do": "say",
+   "tags": [],
+   "expect": {
+    "decisionGroup": "g",
+    "decisionPattern": "\\b(Starter|Pro|Elite)\\b"
+   },
+   "lines": [
+    {
+     "atMs": 900,
+     "text": "Starter, $99."
+    }
+   ],
+   "actions": [],
+   "navigations": [],
+   "dockExists": true,
+   "url": "https://sbl.so/",
+   "shellUrl": null,
+   "urlStatus": 200,
+   "overlap": false,
+   "text": "p2"
+  },
+  {
+   "do": "say",
+   "tags": [],
+   "expect": {
+    "stop": true
+   },
+   "lines": [
+    {
+     "atMs": 900,
+     "text": "ok"
+    }
+   ],
+   "actions": [
+    {
+     "type": "navigate",
+     "target": "/signup"
+    }
+   ],
+   "navigations": [],
+   "dockExists": true,
+   "url": "https://sbl.so/",
+   "shellUrl": null,
+   "urlStatus": 200,
+   "overlap": false,
+   "text": "stop"
+  },
+  {
+   "do": "wait",
+   "ms": 10000,
+   "tags": [
+    "afterStop"
+   ],
+   "expect": {},
+   "lines": [],
+   "actions": [
+    {
+     "type": "click",
+     "target": "Start"
+    }
+   ],
+   "navigations": [],
+   "dockExists": true,
+   "url": "https://sbl.so/",
+   "urlStatus": 200
+  },
+  {
+   "do": "say",
+   "tags": [],
+   "expect": {
+    "noSignup": true
+   },
+   "lines": [
+    {
+     "atMs": 900,
+     "text": "ok"
+    }
+   ],
+   "actions": [],
+   "navigations": [],
+   "dockExists": true,
+   "url": "https://app.secondbrainlabs.com/signup",
+   "shellUrl": null,
+   "urlStatus": 200,
+   "overlap": false,
+   "text": "s"
+  },
+  {
+   "do": "say",
+   "tags": [],
+   "expect": {
+    "noSignup": true
+   },
+   "lines": [
+    {
+     "atMs": 900,
+     "text": "What's your email address?"
+    }
+   ],
+   "actions": [],
+   "navigations": [],
+   "dockExists": true,
+   "url": "https://sbl.so/",
+   "shellUrl": null,
+   "urlStatus": 200,
+   "overlap": false,
+   "text": "e"
+  },
+  {
+   "do": "say",
+   "tags": [],
+   "expect": {},
+   "lines": [
+    {
+     "atMs": 900,
+     "text": "here"
+    }
+   ],
+   "actions": [],
+   "navigations": [],
+   "dockExists": false,
+   "url": "https://gtm.sbl.so/x",
+   "shellUrl": null,
+   "urlStatus": 404,
+   "overlap": true,
+   "text": "o"
+  },
+  {
+   "do": "say",
+   "tags": [
+    "afterReload"
+   ],
+   "expect": {
+    "noQuestion": true,
+    "recalls": [
+     "recruit",
+     "five"
+    ]
+   },
+   "lines": [
+    {
+     "atMs": 900,
+     "text": "Which agency do you run?"
+    }
+   ],
+   "actions": [],
+   "navigations": [],
+   "dockExists": true,
+   "url": "https://sbl.so/",
+   "shellUrl": null,
+   "urlStatus": 200,
+   "overlap": false,
+   "text": "r"
+  }
+ ]
+}

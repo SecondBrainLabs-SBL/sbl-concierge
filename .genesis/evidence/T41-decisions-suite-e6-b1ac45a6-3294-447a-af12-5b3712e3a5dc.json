@@ -1,0 +1,30 @@
+{
+  "task": "T41-decisions",
+  "gate": "suite-e6",
+  "kind": "command",
+  "attempt": "b1ac45a6-3294-447a-af12-5b3712e3a5dc",
+  "command": "node tools/experience/gate.mjs e6",
+  "started_at": "2026-10-13T16:22:01.543Z",
+  "observed_at": "2026-10-13T16:22:02.813Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "PASS e6: 1 rows meet target in /path/to/sbl-concierge/var/experience/latest\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "5a70ba249140dca0726f32e41054f1825a2ddfda",
+    "dirty": true
+  },
+  "source_hash": "c6ac9f036ad679eec38f35a2a9b17b32daf9dced1a862d7f395f391f39ff696a",
+  "before_hash": "c6ac9f036ad679eec38f35a2a9b17b32daf9dced1a862d7f395f391f39ff696a",
+  "config_hash": "d9b0a1d8f9d1025f831300717103a3409852305e1e76310470e0be27c15b9f1d",
+  "environment": {
+    "node": "v26.8.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "a2c454558bdaa1d962466e08b6aa3b9f6bf681f65cb9d0c17301a8e3dd0a6e62"
+}

@@ -1,0 +1,112 @@
+{
+  "id": "buyer-then-stop",
+  "description": "Different facts and wording from dev buyer; asks the same thing twice, then refuses signup.",
+  "start": "https://sbl.so/",
+  "steps": [
+    {
+      "do": "say",
+      "text": "Small consultancy here, two sellers, everything lives in Salesforce.",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noNav": true,
+        "noSignup": true
+      }
+    },
+    {
+      "do": "say",
+      "text": "What package would you suggest for a setup like that?",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true,
+        "decisionGroup": "pkg",
+        "decisionPattern": "\\b(Starter|Pro|Elite)\\b"
+      }
+    },
+    {
+      "do": "say",
+      "text": "And monthly spend?",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true,
+        "recalls": [
+          "\\$\\s?\\d"
+        ]
+      }
+    },
+    {
+      "do": "say",
+      "text": "Sorry, restate the package you'd go with.",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noNav": true,
+        "noSignup": true,
+        "decisionGroup": "pkg",
+        "decisionPattern": "\\b(Starter|Pro|Elite)\\b"
+      }
+    },
+    {
+      "do": "say",
+      "text": "I won't be signing up today, please don't push me there.",
+      "tags": [],
+      "expect": {
+        "class": "chitchat",
+        "noNav": true,
+        "noSignup": true,
+        "stop": true
+      }
+    },
+    {
+      "do": "wait",
+      "ms": 12000,
+      "tags": [
+        "afterStop"
+      ],
+      "expect": {
+        "noNav": true,
+        "noSignup": true
+      }
+    },
+    {
+      "do": "say",
+      "text": "If we grew to six sellers, what would shift?",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true,
+        "recalls": [
+          "Salesforce|six|\\b6\\b|\\b2\\b|two"
+        ]
+      }
+    },
+    {
+      "do": "reload",
+      "tags": [
+        "afterReload"
+      ],
+      "expect": {
+        "noNav": true,
+        "noSignup": true
+      }
+    },
+    {
+      "do": "say",
+      "text": "Remind me what we settled on, in a line.",
+      "tags": [
+        "afterReload"
+      ],
+      "expect": {
+        "class": "inform",
+        "noNav": true,
+        "noSignup": true,
+        "noQuestion": true,
+        "recalls": [
+          "\\bPro\\b|Starter"
+        ]
+      }
+    }
+  ]
+}

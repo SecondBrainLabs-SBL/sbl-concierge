@@ -1,0 +1,30 @@
+{
+  "task": "T12-watchdog",
+  "gate": "suite-e8",
+  "kind": "command",
+  "attempt": "126edf22-4bff-4b19-9f4d-7ce968182eb2",
+  "command": "node tools/experience/gate.mjs e8",
+  "started_at": "2026-10-13T15:07:09.865Z",
+  "observed_at": "2026-10-13T15:07:10.553Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "PASS e8: 2 rows meet target in /path/to/sbl-concierge/var/experience/latest\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "9b3673533a2a32959c7873f5e924d17c910e79e3",
+    "dirty": true
+  },
+  "source_hash": "8a8cf2809fe08d3b9fcbd0f909df896df8feaaec5ca1e8430325bb7363213b5d",
+  "before_hash": "8a8cf2809fe08d3b9fcbd0f909df896df8feaaec5ca1e8430325bb7363213b5d",
+  "config_hash": "c41f1ff8f0a5a479162cced89929f82086684fee31ece530e255ad91177f0244",
+  "environment": {
+    "node": "v26.8.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "e1941fb1f8e2d999cf83a09c9c0c368771a1f3101cafe2baded1e45fb05d4681"
+}

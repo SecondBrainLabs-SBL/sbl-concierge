@@ -1,0 +1,62 @@
+{
+  "manifest_version": 3,
+  "name": "SBL Sales Concierge MVP",
+  "version": "0.4.0",
+  "description": "An on-page sales-agent avatar that guides and operates SBL campaign creation step by step.",
+  "permissions": [
+    "storage",
+    "unlimitedStorage"
+  ],
+  "host_permissions": [
+    "https://sbl.so/*",
+    "https://app.secondbrainlabs.com/*",
+    "http://127.0.0.1:8787/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://sbl.so/*",
+        "https://app.secondbrainlabs.com/*"
+      ],
+      "js": [
+        "core/store.js",
+        "cursor.js",
+        "core/memory.js",
+        "core/record.js",
+        "core/behavior.js",
+        "core/thinker.js",
+        "core/overlays.js",
+        "core/controls.js",
+        "core/screens.js",
+        "core/actions.js",
+        "core/sbl-knowledge.js",
+        "core/site-map.js",
+        "core/task.js",
+        "core/turn.js",
+        "core/trace.js",
+        "core/router.js",
+        "core/guard.js",
+        "core/constitution.js",
+        "vendor/engine.js",
+        "harness.js",
+        "shell.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/sbl-brain.png"
+      ],
+      "matches": [
+        "https://sbl.so/*",
+        "https://app.secondbrainlabs.com/*"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+RULES: Never invent prices, discounts or availability. Public pricing below is published marketing pricing, not an account quote; the user's dashboard Billing page is authoritative. Coming-soon items are never offered as available. Site numbers are company claims, not guarantees. If something is not covered here, say you don't know and offer to check the dashboard or ask the team (team@sbl.so).
+
+ABOUT SBL: SBL (Sbl.so, Second Brain Labs). An autonomous AI SDR for outreach. It finds leads, runs personalized LinkedIn and WhatsApp campaigns, chats with replies, follows up and books meetings. Dashboard: app.secondbrainlabs.com. For: Founders, sales teams and agencies (also creators, coaches, recruiters, healthcare and services businesses). Promise: Outbound that books meetings without hiring an SDR: AI holds the conversation, hands off to a human when it is unsure, and sends from managed SDR profiles instead of the customer's own LinkedIn account.
+
+COMING SOON (not available yet, never present as available):
+- A/B testing (up to 10 message variants)
+- Elite plan ($997/mo, invite only)
+- Email automation inside the LinkedIn/WhatsApp platform
+- MCP commands /sbl-leads and /sbl-ab
+- Extra signal types in the dashboard Signals module (phone/email enrichment inside ICP Leads too)
+
+PUBLIC PRICING (published, scope=public, not a quote):
+- Starter: $99/month. 7-day free trial, no card. 2 outreach seats (extra $39/mo), unlimited workspaces, 1,000 ICP-matched leads/mo, LinkedIn Signals on your own posts, AI replies in 100+ languages, LinkedIn + WhatsApp, rich media, unlimited Sales Navigator extraction, 2 team members, MCP/API/static webhooks, priority support. [sbl.so/pricing/, 2026-09-30]
+- Pro: $189/month. Everything in Starter plus 4 seats (extra $39/mo), 2,000 premium leads/mo, premium Signals (job changes, funding, competitor monitoring), cloned-voice rich media, built-in CRM with export, custom webhooks, 10 team members. Marked 'Best Value'. [sbl.so/pricing/, 2026-09-30]
+- Elite: $997/month. COMING SOON, invite only (email team@sbl.so). Custom seats, 500 hyper-curated leads, LinkedIn only, per-prospect personalized journeys/decks. Not generally available. [sbl.so/pricing/, 2026-09-30]
+- Extra outreach seat: $39/seat/month. Additional outreach seat on Starter or Pro; agency page: one login for a teammate or client, unlimited workspaces, inbox and CRM. [sbl.so/agency/, 2026-09-30]
+- SDR Profile (rented LinkedIn profile): $65/profile/month. Pre-warmed managed sender profile; $59 each for more than 10 profiles (pricing page). The SDR-profiles page headlines $59/mo. An optional location add-on was observed at $15/profile/mo in the dashboard calculator (not a public price). [sbl.so/pricing/, 2026-09-30]
+- Enterprise: Custom/custom. Contact team@sbl.so for custom workflow, volume or compliance needs. [sbl.so/pricing/, 2026-09-30]
+- Pre-warmed email mailbox: $6/mailbox/month. Cold-email mailboxes, no domain purchase or warm-up wait (separate offer). [sbl.so/email/, 2026-09-30]
+- HeyReach reply add-on: $59/seat/month. Launch offer 'lock in $59/seat, price rises after launch'. Invite form; never imply instant access. [sbl.so/heyreach/, 2026-09-30]
+- Published pricing is not an account quote. The dashboard Billing page decides what a given user pays and is eligible for.
+- Public pages differ on SDR profiles: the homepage says unlimited SDR profiles are included; the pricing page prices profiles at $65 ($59 above 10); the SDR page says $59. Scope of each bundle is unclear, so say so instead of picking one.
+- Guarantee: pages advertise a 90% money-back guarantee with terms and conditions; details not on the pages read.
+
+WHO IT IS FOR:
+- Founders: Run a full outbound motion without hiring an SDR; book meetings while you build; your personal account stays clean.
+- Sales teams: Fill every rep's calendar on autopilot; AI handles replies, objections and follow-up; two-way CRM sync.
+- Agencies: Scale outreach across clients for one flat fee: a separate workspace per client on every plan, one unified inbox, per-client reports, clients invited free, a seat that comes with a sender profile option, rented profiles at $65/mo. Typical setup per active client as published: 1 seat + 3-5 rented profiles. Published example: 1 seat + 3 profiles = $234/mo.
+- Existing HeyReach users: Add SBL to qualify replies, draft, follow up and book, with Draft Mode approval before any send. Invite-only add-on.
+- Developers / external agents: Drive campaigns from Claude, Codex or n8n via MCP, or from your own systems via REST API and webhooks.
+
+PUBLISHED NUMBERS (company claims):
+- Teams/companies using SBL: 5,000+ [sbl.so/, 2026-09-30]
+- Messages sent: 50M+ with 0 account bans (claim) [sbl.so/, 2026-09-30]
+- G2 rating: 4.7/5 [sbl.so/, 2026-09-30]
+- Countries: 10+ [sbl.so/, 2026-09-30]
+- Reply rate (aggregate claim): 40% [sbl.so/agency/, 2026-09-30]
+- Booked meetings, claim vs other tools: 15-25% vs 2-5% [sbl.so/, 2026-09-30]
+- Meetings from people who never replied to the first message: 74% [sbl.so/, 2026-09-30]
+- Median lead-to-meeting time: 11 days [sbl.so/, 2026-09-30]
+- Agency workspaces in 2026 so far: messages / replies / meetings / pipeline: 571,168 / 228,468 / 38,459 / $38.5M (avg deal $1k) [sbl.so/agency/, 2026-09-30]
+- Customer example: Cialdini Institute: spend $2,000/mo, pipeline added $9,000 [sbl.so/pricing/, 2026-09-30]
+- Customer example: Topmate: spend $800/mo, added $4,500 [sbl.so/pricing/, 2026-09-30]
+
+CHANNELS:
+- LinkedIn: Lead generation, Sales Navigator/Recruiter import, AI chats, cloned-voice notes and rich media (images, videos, PDFs), warm-up sequences (likes, profile visits, connection requests), Comment-to-DM, smart follow-ups, analytics, built-in CRM, unified inbox, auto sender rotation. Per profile per day: up to 75 new connections and 200 messages to 1st connections (as published; the FAQ suggests starting lower: 15-20 invites/day on accounts under 3 months, 25 on standard, 30-40 on established).
+- WhatsApp: Two paths: personalized outbound campaigns, and AI qualification of inbound chats (website widget, click-to-WhatsApp ads, Meta lead ads). Multilingual; runs via official Meta Business Solution Providers; conversation costs are included in SBL pricing.
+- Email: Separate offer: pre-warmed mailboxes for cold email. LinkedIn page says email automation is coming soon; do not substitute it for a LinkedIn or WhatsApp workflow.

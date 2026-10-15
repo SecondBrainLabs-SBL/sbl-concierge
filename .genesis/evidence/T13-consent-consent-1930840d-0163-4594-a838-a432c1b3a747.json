@@ -1,0 +1,30 @@
+{
+  "task": "T13-consent",
+  "gate": "consent",
+  "kind": "command",
+  "attempt": "1930840d-0163-4594-a838-a432c1b3a747",
+  "command": "node --test tests/consent.test.cjs",
+  "started_at": "2026-10-13T15:07:14.692Z",
+  "observed_at": "2026-10-13T15:07:16.520Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "✔ signup navigation without evidence is refused: the page never moves and the turn ends (8.371209ms)\n✔ signup and login navigation with matching evidence goes ahead; ordinary navigation needs none (2.590416ms)\n✔ the overlap bar is 0.6 against a single visitor message (0.956459ms)\n(node:80061) MaxListenersExceededWarning: Possible EventTarget memory leak detected. 11 click listeners added to EventTarget. MaxListeners is 10. Use events.setMaxListeners() to increase limit\n(Use `node --trace-warnings ...` to show where the warning was created)\n✔ a click on a link to signup needs the same evidence (810.80275ms)\n✔ ask_user for an email or phone number needs evidence; other questions do not (93.222583ms)\n✔ then:do needs evidence; a refused do ends the turn with a line (3.977167ms)\n✔ a system note or a proactive thought is not the visitor's word (3.707792ms)\n✔ a refusal is binding: evidence older than the latest refusal does not count, a later request does (8.039084ms)\n✔ declined is only honoured on the first line of a turn (3.533417ms)\n✔ the refusal lasts for the visit: a fresh page (new harness) still knows (17.571167ms)\n✔ S1: a one-word 'because' is no evidence; the quote needs 2+ content words, 60% of them in ONE recent message (5.875209ms)\n✔ S1: a bare yes to the agent's own offer about the gated thing is evidence; a bare yes to anything else is not (1.829708ms)\n✔ S2: a reply to a proactive offer records only the visitor's words, not the wrapper's quote of the agent (0.352959ms)\n✔ S3: the URL gate parses the destination: userinfo, ;x, %-escapes, doubled slashes, case; from sbl.so any app link (0.186333ms)\n✔ S3: input_text into an email or phone field needs the same evidence in any turn shape (306.404917ms)\n✔ S4: contact asks are gated in say and done too, but product talk about email is not (47.869125ms)\n✔ B2: evidence needs the quote's words AND its content words in ONE visitor message; stop-words and one-word quotes are not evidence (1.285ms)\nℹ tests 17\nℹ suites 0\nℹ pass 17\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 1385.617833\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "9b3673533a2a32959c7873f5e924d17c910e79e3",
+    "dirty": true
+  },
+  "source_hash": "8a8cf2809fe08d3b9fcbd0f909df896df8feaaec5ca1e8430325bb7363213b5d",
+  "before_hash": "8a8cf2809fe08d3b9fcbd0f909df896df8feaaec5ca1e8430325bb7363213b5d",
+  "config_hash": "be8e67d4b58529c5c8b124b930353bc407a23b2f8d16b4fe663ccd4fd7e81f8c",
+  "environment": {
+    "node": "v26.8.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "011fa325c6b470e9aa7e328ca2dfc3296d38ea5af31a0ccaec5c25cd639b1372"
+}

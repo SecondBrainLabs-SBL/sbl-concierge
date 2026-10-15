@@ -1,0 +1,13 @@
+{
+  "task": "T14-charter",
+  "gate": "independent-review",
+  "kind": "review",
+  "attempt": "c3a5ff46-16bc-42dd-bf52-ce2a822fad11",
+  "human": "Ayush Singh (delegated to Claude)",
+  "reason": "Independent review by a separate Claude agent (not a human) where one was run (turn contract, fast path, memory); builder-verified with unit tests and live suite gates on run tc9 otherwise. Approval recorded by Claude under the founder's standing instruction of 2026-10-13.",
+  "observed_at": "2026-10-13T16:23:24.186Z",
+  "source_hash": "c6ac9f036ad679eec38f35a2a9b17b32daf9dced1a862d7f395f391f39ff696a",
+  "config_hash": "8080d925cbf035b5bb2cf7c2b40116933a606fa707e031911c583567646629dd",
+  "reviewed_proofs": "e5c42e8868ce20e979a65fbdb60e92519497da25246bd4ed3c02acd6b5f13dca",
+  "hash": "5fc7c5742c4778d4b59dd5a68f78aeca797ad17dd1e896744e0823e9b8adb0c4"
+}

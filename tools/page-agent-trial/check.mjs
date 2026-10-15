@@ -1,0 +1,10 @@
+import { chromium } from "playwright"; import fs from "node:fs";
+const pw = fs.readFileSync("out/.pw", "utf8"), email = fs.readFileSync("out/test-email.txt", "utf8");
+const b = await chromium.launch(); const p = await (await b.newContext({ viewport: { width: 1366, height: 850 } })).newPage();
+await p.goto("https://app.secondbrainlabs.com/login"); await p.locator('input[type=email],input[name=email]').first().fill(email); await p.locator("input[type=password]").first().fill(pw);
+await p.locator("button[type=submit]").first().click(); await p.waitForURL(/campaigns|onboarding|dashboard/, { timeout: 30000 }); await p.waitForTimeout(3000);
+await p.goto("https://app.secondbrainlabs.com/campaigns"); await p.waitForTimeout(4000);
+const t = await p.evaluate(() => document.body.innerText); const ids = await p.evaluate(() => [...document.querySelectorAll("a[href*='/campaigns/']")].map((a) => a.getAttribute("href")));
+fs.writeFileSync("out/check-campaigns.txt", t.split(pw).join("***").slice(0, 3000) + "\nHREFS " + JSON.stringify([...new Set(ids)])); console.log(t.slice(0, 1500), [...new Set(ids)]);
+await p.goto("https://app.secondbrainlabs.com/campaigns/8623"); await p.waitForTimeout(4000); console.log("----8623\n", (await p.evaluate(() => document.body.innerText)).slice(0, 1200));
+await b.close();

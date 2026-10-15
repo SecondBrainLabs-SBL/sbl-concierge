@@ -1,0 +1,30 @@
+{
+  "task": "T20-router",
+  "gate": "suite-e1",
+  "kind": "command",
+  "attempt": "8c61ff67-f1a4-4ab8-9f98-c294c7e590f5",
+  "command": "node tools/experience/gate.mjs e1",
+  "started_at": "2026-10-15T02:13:01.977Z",
+  "observed_at": "2026-10-15T02:13:04.450Z",
+  "exit_code": 1,
+  "signal": null,
+  "stdout": "FAIL e1: E1.p50=1617.6666666666667 (want <= 1500)\n",
+  "stderr": "",
+  "failure": "command-failed",
+  "receipt": null,
+  "revision": {
+    "commit": "62d0c8568b3f02ac8fa7e16db8eed5b3fb690ee2",
+    "dirty": true
+  },
+  "source_hash": "a277a6aa0a3af1d31232ef6a83dcd2464a99e97ea39c08bf38ede02d1d1bf8e9",
+  "before_hash": "a277a6aa0a3af1d31232ef6a83dcd2464a99e97ea39c08bf38ede02d1d1bf8e9",
+  "config_hash": "f3c7e57dc2a2862a0dd341fc6180f8da987169c2d176f8a82f999810ba23aa2e",
+  "environment": {
+    "node": "v26.8.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "183c84849c71de4eda62171526c0b50adbe928fc73282948d96740cc994b4c57"
+}

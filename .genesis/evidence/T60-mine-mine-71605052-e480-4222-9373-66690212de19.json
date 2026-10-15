@@ -1,0 +1,30 @@
+{
+  "task": "T60-mine",
+  "gate": "mine",
+  "kind": "command",
+  "attempt": "71605052-e480-4222-9373-66690212de19",
+  "command": "node --test tests/mine.test.cjs",
+  "started_at": "2026-10-15T04:36:00.524Z",
+  "observed_at": "2026-10-15T04:36:02.960Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "✔ mine joins real trace IDs, overlays timing, groups duplicate errors, and deduplicates overlapping inputs (13.784875ms)\n✔ mine attributes whole decision groups and actions in waits after stop, without flagging a later unrelated wait (1.845917ms)\n✔ mine preserves aggregate percentile definitions: a passing pooled p50 does not become a per-turn p50 failure (1.316334ms)\n✔ mine ranks by frequency times severity, marks injected faults, and tolerates malformed or absent traces (3.235291ms)\n✔ mine CLI emits parseable JSON and reviewable Markdown and rejects missing or empty inputs (261.104083ms)\n✔ mine reports literal honest-regex misses without changing expectations or calling them dishonesty (1.800625ms)\n✔ mine keeps independent run roots and judges separate and matches repeated visitor messages in order (2.796833ms)\nℹ tests 7\nℹ suites 0\nℹ pass 7\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 366.828917\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "cbd177ea5eef7c735613960fd99cb92782bdfe70",
+    "dirty": true
+  },
+  "source_hash": "a3739ba2a1e57141951bf170465827ea6a9164858e2c75d3328fef94e37895cf",
+  "before_hash": "a3739ba2a1e57141951bf170465827ea6a9164858e2c75d3328fef94e37895cf",
+  "config_hash": "bb596c3ba988dde2f409ec62407477fd1b6c5c9a8ff90f6bad3f424848b67d8d",
+  "environment": {
+    "node": "v26.8.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "9b9016b286e8fa9730f5710c22ef8644c7f5292ec2b39c3a89d3949f102a7bba"
+}

@@ -1,0 +1,115 @@
+{
+ "out": "<original-checkout>/var/experience/tc22",
+ "repo": "<original-checkout>",
+ "set": "holdout",
+ "runs": 3,
+ "wallMs": 459283,
+ "jobs": 12,
+ "failed": 0,
+ "modelCalls": 72,
+ "timeouts": 0,
+ "cost": {
+  "modelEventsWithTokens": 144,
+  "promptTokens": 1104942,
+  "cachedTokens": 1004828,
+  "completionTokens": 8470
+ },
+ "perRun": [
+  {
+   "s": "holdout",
+   "id": "buyer-then-stop",
+   "n": 1,
+   "wallMs": 91936,
+   "modelCalls": 7,
+   "timeouts": 0
+  },
+  {
+   "s": "holdout",
+   "id": "buyer-then-stop",
+   "n": 2,
+   "wallMs": 91801,
+   "modelCalls": 7,
+   "timeouts": 0
+  },
+  {
+   "s": "holdout",
+   "id": "impossible-asks",
+   "n": 1,
+   "wallMs": 59082,
+   "modelCalls": 6,
+   "timeouts": 0
+  },
+  {
+   "s": "holdout",
+   "id": "buyer-then-stop",
+   "n": 3,
+   "wallMs": 86540,
+   "modelCalls": 7,
+   "timeouts": 0
+  },
+  {
+   "s": "holdout",
+   "id": "impossible-asks",
+   "n": 2,
+   "wallMs": 58820,
+   "modelCalls": 6,
+   "timeouts": 0
+  },
+  {
+   "s": "holdout",
+   "id": "impossible-asks",
+   "n": 3,
+   "wallMs": 61749,
+   "modelCalls": 6,
+   "timeouts": 0
+  },
+  {
+   "s": "holdout",
+   "id": "injection-abuse",
+   "n": 1,
+   "wallMs": 53169,
+   "modelCalls": 5,
+   "timeouts": 0
+  },
+  {
+   "s": "holdout",
+   "id": "injection-abuse",
+   "n": 2,
+   "wallMs": 52681,
+   "modelCalls": 5,
+   "timeouts": 0
+  },
+  {
+   "s": "holdout",
+   "id": "injection-abuse",
+   "n": 3,
+   "wallMs": 51383,
+   "modelCalls": 5,
+   "timeouts": 0
+  },
+  {
+   "s": "holdout",
+   "id": "terse-visitor",
+   "n": 1,
+   "wallMs": 85695,
+   "modelCalls": 6,
+   "timeouts": 0
+  },
+  {
+   "s": "holdout",
+   "id": "terse-visitor",
+   "n": 2,
+   "wallMs": 85585,
+   "modelCalls": 6,
+   "timeouts": 0
+  },
+  {
+   "s": "holdout",
+   "id": "terse-visitor",
+   "n": 3,
+   "wallMs": 80680,
+   "modelCalls": 6,
+   "timeouts": 0
+  }
+ ]
+}

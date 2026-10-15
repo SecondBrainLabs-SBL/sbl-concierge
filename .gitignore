@@ -1,0 +1,16 @@
+.env
+.DS_Store
+captures/
+.browser-profile/
+node_modules/
+tools/capture/node_modules
+tools/proof/out/
+tools/browser-use-trial/out/
+tools/page-agent-trial/out/
+.venv/
+sbl-agent.js
+var/
+
+.env.*
+!.env.example
+*.log

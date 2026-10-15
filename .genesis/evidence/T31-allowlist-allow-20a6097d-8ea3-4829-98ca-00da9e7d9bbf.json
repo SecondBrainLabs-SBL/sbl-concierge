@@ -1,0 +1,30 @@
+{
+  "task": "T31-allowlist",
+  "gate": "allow",
+  "kind": "command",
+  "attempt": "20a6097d-8ea3-4829-98ca-00da9e7d9bbf",
+  "command": "node --test tests/allowlist.test.cjs",
+  "started_at": "2026-10-13T16:22:40.490Z",
+  "observed_at": "2026-10-13T16:22:42.051Z",
+  "exit_code": 1,
+  "signal": null,
+  "stdout": "",
+  "stderr": "Could not find 'tests/allowlist.test.cjs'\n",
+  "failure": "command-failed",
+  "receipt": null,
+  "revision": {
+    "commit": "5a70ba249140dca0726f32e41054f1825a2ddfda",
+    "dirty": true
+  },
+  "source_hash": "c6ac9f036ad679eec38f35a2a9b17b32daf9dced1a862d7f395f391f39ff696a",
+  "before_hash": "c6ac9f036ad679eec38f35a2a9b17b32daf9dced1a862d7f395f391f39ff696a",
+  "config_hash": "a51b5a44703b5dad257865a3f7b6a469df01e0c8032bcfc13051b73a5d5d90a2",
+  "environment": {
+    "node": "v26.8.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "b2aa65a8ba362f11359c34cc52d2e60c491cb0e3912ff77230550b4e1c8bcbce"
+}

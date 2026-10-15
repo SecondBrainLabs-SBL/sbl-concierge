@@ -1,0 +1,30 @@
+{
+  "task": "T31-allowlist",
+  "gate": "allow",
+  "kind": "command",
+  "attempt": "9378e17d-15ac-499c-b9e3-b5cb71a48f9e",
+  "command": "node --test tests/allowlist.test.cjs",
+  "started_at": "2026-10-15T02:31:57.631Z",
+  "observed_at": "2026-10-15T02:32:00.417Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "(node:40065) MaxListenersExceededWarning: Possible EventTarget memory leak detected. 11 click listeners added to EventTarget. MaxListeners is 10. Use events.setMaxListeners() to increase limit\n(Use `node --trace-warnings ...` to show where the warning was created)\n✔ engine show/navigate: offsite destinations end with one honest refusal and never act (24.246083ms)\n✔ engine show/click: offsite destinations end with one honest refusal and never act (6.891459ms)\n✔ engine do/navigate: offsite destinations end with one honest refusal and never act (6.372083ms)\n✔ engine do/click: offsite destinations end with one honest refusal and never act (3.72475ms)\n✔ engine navigation: index page allowed, invented page refused, on-page SBL link allowed (805.695291ms)\n✔ engine app navigation and clicks require evidence (812.482791ms)\nℹ tests 6\nℹ suites 0\nℹ pass 6\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 1736.604292\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "c896fa6550ec9d46f2a2e86af343ef9e2f007944",
+    "dirty": true
+  },
+  "source_hash": "655dd7bfbbe55cf036b633b120a83533fedc3e2e9de1d90eb679c6a3e53c69ae",
+  "before_hash": "655dd7bfbbe55cf036b633b120a83533fedc3e2e9de1d90eb679c6a3e53c69ae",
+  "config_hash": "a51b5a44703b5dad257865a3f7b6a469df01e0c8032bcfc13051b73a5d5d90a2",
+  "environment": {
+    "node": "v26.8.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "ed1dec0069993e3b577026f3ae18a159006494ca8b2b840f7af81c2aa2de62a1"
+}

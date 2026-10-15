@@ -1,0 +1,13 @@
+{
+  "task": "T11-preempt",
+  "gate": "independent-review",
+  "kind": "review",
+  "attempt": "ce1e9929-8dcb-4b27-83b5-1c3dd4249a09",
+  "human": "Ayush Singh (delegated to Claude)",
+  "reason": "Independent review by a separate Claude agent (not a human) where one was run (turn contract, fast path, memory); builder-verified with unit tests and live suite gates on run tc9 otherwise. Approval recorded by Claude under the founder's standing instruction of 2026-10-13.",
+  "observed_at": "2026-10-13T16:21:16.076Z",
+  "source_hash": "c6ac9f036ad679eec38f35a2a9b17b32daf9dced1a862d7f395f391f39ff696a",
+  "config_hash": "1b756a84ed042fa6b2188b8438dd259611ecc98b8209feeb9686c58696267c83",
+  "reviewed_proofs": "5222bbddf81737669f4c5ad362543d1f2c73321925e380fec96458efc5f9a411",
+  "hash": "ab8a82909a7cb83c249ddd9ee8e77d08220eec7f806374e2588289a306222fee"
+}

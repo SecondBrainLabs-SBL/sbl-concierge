@@ -1,0 +1,30 @@
+{
+  "task": "T51-capacity",
+  "gate": "capacity",
+  "kind": "command",
+  "attempt": "07bb386e-0e6b-4e2d-b0f1-fb9aff51b17c",
+  "command": "node --test tests/capacity.test.cjs",
+  "started_at": "2026-10-13T16:22:19.284Z",
+  "observed_at": "2026-10-13T16:22:20.760Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "EXTENSION_ID is unset: pinning to the first extension that calls. Set it to pin your extension's id up front.\nSBL Sales Concierge GPT-Live server: http://127.0.0.1:8801\ngpt-live-1 is configured.\n/agent/route upstream 500\nUSAGE /agent/route t=2026-10-13T16:22:20.166Z http=500 ms=0 first=undefined prompt=undefined completion=undefined cached=undefined\n/agent/route upstream 500\nUSAGE /agent/route t=2026-10-13T16:22:20.170Z http=500 ms=0 first=undefined prompt=undefined completion=undefined cached=undefined\n/agent/route upstream 500\nUSAGE /agent/route t=2026-10-13T16:22:20.174Z http=500 ms=0 first=undefined prompt=undefined completion=undefined cached=undefined\n/agent/route upstream 500\nUSAGE /agent/route t=2026-10-13T16:22:20.183Z http=500 ms=0 first=undefined prompt=undefined completion=undefined cached=undefined\n/agent/route upstream 500\nUSAGE /agent/route t=2026-10-13T16:22:20.186Z http=500 ms=0 first=undefined prompt=undefined completion=undefined cached=undefined\n/agent/route upstream 500\nUSAGE /agent/route t=2026-10-13T16:22:20.194Z http=500 ms=0 first=undefined prompt=undefined completion=undefined cached=undefined\n/agent/route upstream 500\nUSAGE /agent/route t=2026-10-13T16:22:20.196Z http=500 ms=0 first=undefined prompt=undefined completion=undefined cached=undefined\n/agent/route upstream 500\nUSAGE /agent/route t=2026-10-13T16:22:20.198Z http=500 ms=0 first=undefined prompt=undefined completion=undefined cached=undefined\n/agent/route upstream 500\nUSAGE /agent/route t=2026-10-13T16:22:20.201Z http=500 ms=0 first=undefined prompt=undefined completion=undefined cached=undefined\n/agent/route upstream 500\nUSAGE /agent/route t=2026-10-13T16:22:20.203Z http=500 ms=0 first=undefined prompt=undefined completion=undefined cached=undefined\n/agent/route upstream 500\nUSAGE /agent/route t=2026-10-13T16:22:20.208Z http=500 ms=0 first=undefined prompt=undefined completion=undefined cached=undefined\n/agent/route upstream 500\nUSAGE /agent/route t=2026-10-13T16:22:20.261Z http=500 ms=0 first=undefined prompt=undefined completion=undefined cached=undefined\n✔ capacity: one visitor at the cap is refused while another is served; refusals do not count; the window rolls; the global ceiling applies; idle entries are swept (151.895708ms)\nℹ tests 1\nℹ suites 0\nℹ pass 1\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 205.396166\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "5a70ba249140dca0726f32e41054f1825a2ddfda",
+    "dirty": true
+  },
+  "source_hash": "c6ac9f036ad679eec38f35a2a9b17b32daf9dced1a862d7f395f391f39ff696a",
+  "before_hash": "c6ac9f036ad679eec38f35a2a9b17b32daf9dced1a862d7f395f391f39ff696a",
+  "config_hash": "c3024c6e2b5d6bf834c9490974a5bec3c32f09077f1c7465e305bbe9d1ff170d",
+  "environment": {
+    "node": "v26.8.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "f47e9368329cd6519ea6f9722e3337d3915a507a32d707effbcfdb9513811296"
+}

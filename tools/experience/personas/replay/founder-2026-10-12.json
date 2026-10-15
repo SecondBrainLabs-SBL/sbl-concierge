@@ -1,0 +1,155 @@
+{
+ "id": "founder-2026-10-12",
+ "description": "Visitor lines of the founder session of 2026-10-12, in order, without the original timing.",
+ "start": "https://sbl.so/",
+ "steps": [
+  {
+   "do": "say",
+   "text": "hey",
+   "tags": [],
+   "expect": {
+    "mustReply": true,
+    "maxLines": 2
+   }
+  },
+  {
+   "do": "say",
+   "text": "hey",
+   "tags": [],
+   "expect": {
+    "mustReply": true,
+    "maxLines": 2
+   }
+  },
+  {
+   "do": "say",
+   "text": "i was just wondering about pricing",
+   "tags": [],
+   "expect": {
+    "mustReply": true,
+    "maxLines": 2
+   }
+  },
+  {
+   "do": "say",
+   "text": "ok what's intent signals",
+   "tags": [],
+   "expect": {
+    "mustReply": true,
+    "maxLines": 2
+   }
+  },
+  {
+   "do": "say",
+   "text": "ok can we go and start creating some campoaign or smth",
+   "tags": [],
+   "expect": {
+    "mustReply": true,
+    "maxLines": 2
+   }
+  },
+  {
+   "do": "say",
+   "text": "i already have an account",
+   "tags": [],
+   "expect": {
+    "mustReply": true,
+    "maxLines": 2
+   }
+  },
+  {
+   "do": "say",
+   "text": "taking me to the campaign. Um I'm just new here. Don't take me to the campaign. Just help me explore the landing page",
+   "tags": [],
+   "expect": {
+    "mustReply": true,
+    "maxLines": 2,
+    "noNav": true,
+    "noSignup": true
+   }
+  },
+  {
+   "do": "say",
+   "text": "let me explore the landing page",
+   "tags": [],
+   "expect": {
+    "mustReply": true,
+    "maxLines": 2,
+    "noNav": true,
+    "noSignup": true
+   }
+  },
+  {
+   "do": "say",
+   "text": "It it has not started. You able to hear me? Right",
+   "tags": [],
+   "expect": {
+    "mustReply": true,
+    "maxLines": 2
+   }
+  },
+  {
+   "do": "say",
+   "text": "Okay",
+   "tags": [],
+   "expect": {
+    "mustReply": true,
+    "maxLines": 2
+   }
+  },
+  {
+   "do": "say",
+   "text": "I'm going to say now- So let's do one thing. I think the better way is I'll just chat over here with this agent and um assume that this is what is going to",
+   "tags": [],
+   "expect": {
+    "mustReply": true,
+    "maxLines": 2
+   }
+  },
+  {
+   "do": "say",
+   "text": "also say. In",
+   "tags": [],
+   "expect": {
+    "mustReply": true,
+    "maxLines": 2
+   }
+  },
+  {
+   "do": "say",
+   "text": "hey i'm new here",
+   "tags": [],
+   "expect": {
+    "mustReply": true,
+    "maxLines": 2
+   }
+  },
+  {
+   "do": "say",
+   "text": "i'm looking to explore sbl in general for my finance agency where i help individiausl to build investment patterns/wealth",
+   "tags": [],
+   "expect": {
+    "mustReply": true,
+    "maxLines": 2
+   }
+  },
+  {
+   "do": "say",
+   "text": "hey",
+   "tags": [],
+   "expect": {
+    "mustReply": true,
+    "maxLines": 2
+   }
+  },
+  {
+   "do": "say",
+   "text": "okay can u show me proicing aroundf which works best for my ahency and some case-studies accordingly",
+   "tags": [],
+   "expect": {
+    "mustReply": true,
+    "maxLines": 2
+   }
+  }
+ ]
+}

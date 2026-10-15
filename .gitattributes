@@ -1,0 +1,3 @@
+# Keep line endings stable regardless of the editor or script that writes a file.
+* text=auto eol=lf
+*.png binary

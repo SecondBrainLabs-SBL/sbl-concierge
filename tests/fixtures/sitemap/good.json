@@ -1,0 +1,77 @@
+{
+ "generatedAt": "2026-10-10T00:00:00.000Z",
+ "site": "https://sbl.so",
+ "pages": [
+  {
+   "url": "https://sbl.so/",
+   "title": "Home",
+   "description": "",
+   "type": "home",
+   "sections": [
+    {
+     "heading": "H",
+     "level": 2,
+     "anchor": "",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "url": "https://sbl.so/pricing/",
+   "title": "Pricing",
+   "description": "",
+   "type": "pricing",
+   "sections": [
+    {
+     "heading": "H",
+     "level": 2,
+     "anchor": "",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "url": "https://sbl.so/case-study/",
+   "title": "Case studies",
+   "description": "",
+   "type": "customer story",
+   "sections": [
+    {
+     "heading": "H",
+     "level": 2,
+     "anchor": "",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "url": "https://sbl.so/agency/",
+   "title": "Agency",
+   "description": "",
+   "type": "use case",
+   "sections": [
+    {
+     "heading": "H",
+     "level": 2,
+     "anchor": "",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "url": "https://sbl.so/blog/some-post/",
+   "title": "Post",
+   "description": "",
+   "type": "blog post",
+   "sections": [
+    {
+     "heading": "H",
+     "level": 2,
+     "anchor": "",
+     "text": ""
+    }
+   ]
+  }
+ ],
+ "text": "SBL SITE MAP"
+}

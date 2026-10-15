@@ -1,0 +1,27 @@
+{
+ "out": "<original-checkout>/var/experience/tc22",
+ "repo": "<original-checkout>",
+ "set": "faults",
+ "runs": 1,
+ "wallMs": 63628,
+ "jobs": 1,
+ "failed": 0,
+ "modelCalls": 9,
+ "timeouts": 0,
+ "cost": {
+  "modelEventsWithTokens": 2,
+  "promptTokens": 15548,
+  "cachedTokens": 13859,
+  "completionTokens": 93
+ },
+ "perRun": [
+  {
+   "s": "faults",
+   "id": "faults",
+   "n": 1,
+   "wallMs": 63628,
+   "modelCalls": 9,
+   "timeouts": 0
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+  "task": "T41-decisions",
+  "gate": "independent-review",
+  "kind": "review",
+  "attempt": "b778eb30-4f5e-4fcc-ba34-5dc97fe0124c",
+  "human": "Ayush Singh (delegated to Claude)",
+  "reason": "Independent review by a separate Claude agent (not a human) where one was run (turn contract, fast path, memory); builder-verified with unit tests and live suite gates on run tc9 otherwise. Approval recorded by Claude under the founder's standing instruction of 2026-10-13.",
+  "observed_at": "2026-10-13T16:22:03.514Z",
+  "source_hash": "c6ac9f036ad679eec38f35a2a9b17b32daf9dced1a862d7f395f391f39ff696a",
+  "config_hash": "d9b0a1d8f9d1025f831300717103a3409852305e1e76310470e0be27c15b9f1d",
+  "reviewed_proofs": "ed8ccd82240b569c75b300103f212eb6e04e49c8b682299f83b45dc02bacd0c8",
+  "hash": "f54a312a468f674f3fcd860339e99727bd787ddc59754dcd00e19c4107f300ba"
+}

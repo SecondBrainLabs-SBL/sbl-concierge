@@ -1,0 +1,67 @@
+{
+ "out": "<original-checkout>/var/experience/tc24",
+ "repo": "<original-checkout>",
+ "set": "dev",
+ "runs": 1,
+ "wallMs": 311916,
+ "jobs": 6,
+ "failed": 0,
+ "modelCalls": 42,
+ "timeouts": 0,
+ "cost": {
+  "modelEventsWithTokens": 82,
+  "promptTokens": 659688,
+  "cachedTokens": 592650,
+  "completionTokens": 5004
+ },
+ "perRun": [
+  {
+   "s": "dev",
+   "id": "messy-first-timer",
+   "n": 1,
+   "wallMs": 124844,
+   "modelCalls": 7,
+   "timeouts": 0
+  },
+  {
+   "s": "dev",
+   "id": "navigator",
+   "n": 1,
+   "wallMs": 140202,
+   "modelCalls": 8,
+   "timeouts": 0
+  },
+  {
+   "s": "dev",
+   "id": "repeat-asker",
+   "n": 1,
+   "wallMs": 61710,
+   "modelCalls": 6,
+   "timeouts": 0
+  },
+  {
+   "s": "dev",
+   "id": "refuser",
+   "n": 1,
+   "wallMs": 106167,
+   "modelCalls": 7,
+   "timeouts": 0
+  },
+  {
+   "s": "dev",
+   "id": "returner",
+   "n": 1,
+   "wallMs": 73169,
+   "modelCalls": 6,
+   "timeouts": 0
+  },
+  {
+   "s": "dev",
+   "id": "serious-buyer",
+   "n": 1,
+   "wallMs": 80903,
+   "modelCalls": 8,
+   "timeouts": 0
+  }
+ ]
+}

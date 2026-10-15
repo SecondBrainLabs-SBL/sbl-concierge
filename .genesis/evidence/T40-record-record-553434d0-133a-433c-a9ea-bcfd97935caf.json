@@ -1,0 +1,30 @@
+{
+  "task": "T40-record",
+  "gate": "record",
+  "kind": "command",
+  "attempt": "553434d0-133a-433c-a9ea-bcfd97935caf",
+  "command": "node --test tests/record.test.cjs",
+  "started_at": "2026-10-13T16:21:32.849Z",
+  "observed_at": "2026-10-13T16:21:55.432Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "✔ validate: unknown keys dropped, caps enforced, a correction replaces the key (4.14075ms)\n✔ validate: emails, phone-like digit runs, card numbers and password words are removed even if the model returns them (0.330625ms)\n✔ merge: a returned record replaces the stored one; a note for an older turn never overwrites a newer record (0.151917ms)\n✔ render: the customer-file text; an empty record is (empty) (0.177459ms)\n✔ remember: a simple 'k: v' line lands in facts (replacing the key); anything else stays a note only (0.820042ms)\n✔ the router payload carries the rendered record: the tail's CUSTOMER FILE block, and the harness passes the context's customerFile (13.669625ms)\n✔ the two decision rules are in the router RULES and in the charter (0.234542ms)\n✔ memory: the record is saved with the website memory and comes back after a reload; reset clears it (0.371625ms)\n✔ the note request: cleaned, bounded, forced tool, no streaming, nothing stored (0.270583ms)\n✔ a visitor turn that ends sends the note call with the current record, the masked message, the lines actually spoken and a sequence number (12.927583ms)\n✔ system and proactive turns send nothing; a turn pre-empted before it said anything sends nothing (56.789792ms)\n✔ a returned record replaces the stored one and is traced; a failed, empty or throwing note leaves it as it was (152.720625ms)\n✔ notes are chained: the second is sent only after the first returned, and it carries the record the first stored (no lost update) (34.963291ms)\nEXTENSION_ID is unset: pinning to the first extension that calls. Set it to pin your extension's id up front.\n✔ the turn is not delayed by the note call: it ends and the next message is heard while a note hangs (12.9105ms)\n✔ with no note dep (an old page) or no record module, a turn runs exactly as before (0.389375ms)\n✔ restored transcript lines carry the restored mark and are not replies: no say, no trace, and the suite driver skips them (1.513875ms)\n/agent/note upstream 500\n/agent/note failed: timeout\n✔ the server: /agent/note returns the validated record, writes a model event, shares /agent/route's origin rules and cap, and times out cleanly (497.475417ms)\n✔ B1: the dashboard makes no note call, its remember never writes the shared record, and a logged-out visitor with a record still gets the first-visit headline (14.092708ms)\n(node:96518) MaxListenersExceededWarning: Possible EventTarget memory leak detected. 11 click listeners added to EventTarget. MaxListeners is 10. Use events.setMaxListeners() to increase limit\n(Use `node --trace-warnings ...` to show where the warning was created)\n✔ S1: a remember fact written while a note is in flight survives the note's answer (18.328125ms)\n✔ S2: keepDecisions: a decision changes only when its inputs changed; an omitted decision is put back; the cap keeps the newest (0.723458ms)\n✔ S2: the harness applies keepDecisions when a note returns (13.3115ms)\n✔ S3: the record never overrides knowledge; the engine context frames the file as data; stored values cannot forge sections (6.47025ms)\n✔ S4: obfuscated contact details and secrets are dropped; ISO dates and plain amounts are kept (1.122667ms)\n✔ S4: the card-number mask is applied to the router payload and the note payload (12.21725ms)\n✔ S5: a note that was lost rides on the next one (at most 2 earlier turns); a saved note clears them; the server waits 6 s, the page 7 s (76.519083ms)\n✔ S6: /agent/note has its own per-visitor per-minute counter (1.123333ms)\n✔ S7: the router's booking flag lights the booking link in place (no engine): the shortest drawn link, in the page rather than a menu (20015.682333ms)\n✔ S7: a show turn never clicks a link that leaves sbl.so / app.secondbrainlabs.com (818.453208ms)\n✔ N1: decisions render first, so the router's 1500-character clip never cuts them (4.912459ms)\n✔ N2: a line said since the page loaded is not marked restored when the transcript is redrawn (3.166333ms)\n✔ N3: note trace events use a short counter and belong to the turn that sent the note (21.099792ms)\n✔ N5: remember only makes a fact of 'key: value' with a 1-3 word key and a value that is not a number fragment (0.698042ms)\nℹ tests 32\nℹ suites 0\nℹ pass 32\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 21877.883833\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "5a70ba249140dca0726f32e41054f1825a2ddfda",
+    "dirty": true
+  },
+  "source_hash": "c6ac9f036ad679eec38f35a2a9b17b32daf9dced1a862d7f395f391f39ff696a",
+  "before_hash": "c6ac9f036ad679eec38f35a2a9b17b32daf9dced1a862d7f395f391f39ff696a",
+  "config_hash": "b6b976ff3164127993c0f8c03d8b45b0e14befd2eef155d455b2a8936f07d6cd",
+  "environment": {
+    "node": "v26.8.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "0a0f3eaad54d93f30f349d456f0a437b355a1bcc998dfd900e5aaecd35824f7b"
+}

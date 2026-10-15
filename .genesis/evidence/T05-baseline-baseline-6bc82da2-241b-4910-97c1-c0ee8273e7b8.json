@@ -1,0 +1,30 @@
+{
+  "task": "T05-baseline",
+  "gate": "baseline",
+  "kind": "command",
+  "attempt": "6bc82da2-241b-4910-97c1-c0ee8273e7b8",
+  "command": "node tools/experience/gate.mjs baseline-exists",
+  "started_at": "2026-10-13T15:05:57.273Z",
+  "observed_at": "2026-10-13T15:05:57.659Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "PASS baseline-exists: baseline scorecard and summary present\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "9b3673533a2a32959c7873f5e924d17c910e79e3",
+    "dirty": true
+  },
+  "source_hash": "7ac1fafd4874a7490c4f4cb5bc3b35b2042e45d5c195fa43c269087bc1782ff6",
+  "before_hash": "7ac1fafd4874a7490c4f4cb5bc3b35b2042e45d5c195fa43c269087bc1782ff6",
+  "config_hash": "9d93b5f874e370a4b40aa938e620eb7c1c083a6168ae40f567e652c52ea56a9f",
+  "environment": {
+    "node": "v26.8.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "591104056562982722c8564f0fe4ec6cf4fec427a69fb63de6654ea62f802331"
+}

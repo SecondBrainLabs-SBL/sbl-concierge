@@ -1,0 +1,27 @@
+{
+ "out": "<original-checkout>/var/experience/tc24",
+ "repo": "<original-checkout>",
+ "set": "replay",
+ "runs": 1,
+ "wallMs": 158948,
+ "jobs": 1,
+ "failed": 0,
+ "modelCalls": 17,
+ "timeouts": 0,
+ "cost": {
+  "modelEventsWithTokens": 33,
+  "promptTokens": 275896,
+  "cachedTokens": 243942,
+  "completionTokens": 2002
+ },
+ "perRun": [
+  {
+   "s": "replay",
+   "id": "founder-2026-10-12",
+   "n": 1,
+   "wallMs": 158948,
+   "modelCalls": 17,
+   "timeouts": 0
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+{"t":1000,"v":"v1","turn":"v1-1","k":"turn_open","text":"which plan?","mode":"typed","url":"https://sbl.so/"}
+{"t":1100,"v":"v1","turn":"v1-1","k":"line","text":"draft the visitor never saw","refused":true}
+{"t":1600,"v":"v1","turn":"v1-1","k":"line","text":"Pro is the fit."}
+{"t":1700,"v":"v1","turn":"v1-1","k":"model","path":"/agent/chat","ms":700,"status":200,"prompt":20000,"completion":80,"cached":15000}
+{"t":2100,"v":"v1","turn":"v1-1","k":"model","path":"/agent/chat","ms":500,"status":200,"prompt":20100,"completion":60,"cached":18000}
+{"t":2300,"v":"v1","turn":"v1-1","k":"model","path":"/agent/chat","ms":400,"status":200,"prompt":20200,"completion":20,"cached":19000}
+{"t":3000,"v":"v1","turn":"v1-1","k":"turn_end","status":"answered","url":"https://sbl.so/"}

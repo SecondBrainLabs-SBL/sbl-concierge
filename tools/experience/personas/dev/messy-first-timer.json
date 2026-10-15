@@ -1,0 +1,73 @@
+{
+  "id": "messy-first-timer",
+  "description": "Vague, lowercase, wanders; asks how to start (must not be pushed into signup).",
+  "start": "https://sbl.so/",
+  "steps": [
+    {
+      "do": "say",
+      "text": "hey i am new here",
+      "tags": [],
+      "expect": {
+        "class": "chitchat",
+        "noNav": true,
+        "noSignup": true
+      }
+    },
+    {
+      "do": "say",
+      "text": "wat does this even do",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true
+      }
+    },
+    {
+      "do": "say",
+      "text": "is it like a chatbot or what",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true
+      }
+    },
+    {
+      "do": "say",
+      "text": "ok and who is it for, i do lead gen for a small agency",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true
+      }
+    },
+    {
+      "do": "say",
+      "text": "can i see a real example from someone",
+      "tags": [],
+      "expect": {
+        "class": "navigate",
+        "landsOn": "case-study"
+      }
+    },
+    {
+      "do": "say",
+      "text": "thx",
+      "tags": [],
+      "expect": {
+        "class": "chitchat",
+        "maxLines": 1,
+        "noNav": true,
+        "noSignup": true
+      }
+    },
+    {
+      "do": "say",
+      "text": "hmm ok. how do i start",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true
+      }
+    }
+  ]
+}

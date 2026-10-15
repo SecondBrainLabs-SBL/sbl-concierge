@@ -1,0 +1,30 @@
+{
+  "task": "T01-trace",
+  "gate": "trace",
+  "kind": "command",
+  "attempt": "c23106b5-f029-45f7-800e-500627ebb86d",
+  "command": "node --test tests/trace.test.cjs",
+  "started_at": "2026-10-13T13:42:24.076Z",
+  "observed_at": "2026-10-13T13:42:26.759Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "✔ an event has the schema's common fields and clipped text (4.557875ms)\n✔ turn ids increment per visitor message, and a turn ends once (0.300583ms)\n✔ the counter survives a page load (same tab storage) (0.162791ms)\n✔ the harness opens a turn per visitor message (typed, voice, answer) and ends it with a status (67.826041ms)\n✔ a refused line is traced with refused: true and the visitor never saw it; actions are traced without proof mode (22.072084ms)\n✔ masking: a typed secret and the fill value never reach an event; fill carries the label only (22.236125ms)\n✔ a crash keeps its cause in the trace and the visitor gets exactly one honest line (23.029875ms)\n✔ blocked site storage (the getter throws) does not stop the tracer or SBLHarness.create (0.523125ms)\n✔ every tracer method is exception-safe: throwing mask, corrupt state, throwing send; the visitor id is a string (0.39925ms)\n✔ urls are traced as origin + path only; 13-19 digit runs are masked (0.192584ms)\n✔ two tabs of one visitor never share a turn id; a seed carries the turn to the next page (0.182ms)\n✔ a turn crossing a page load keeps its id: the task record carries it and boot seeds from it (942.328709ms)\n✔ NFR-12: the trace label of an editable never carries what is typed; the proof event is unchanged (647.003625ms)\n(node:60414) MaxListenersExceededWarning: Possible EventTarget memory leak detected. 11 click listeners added to EventTarget. MaxListeners is 10. Use events.setMaxListeners() to increase limit\n(Use `node --trace-warnings ...` to show where the warning was created)\n✔ NFR-12: a visitor message traced while a secret is awaited is recorded as [hidden] (45.739208ms)\nEXTENSION_ID is unset: pinning to the first extension that calls. Set it to pin your extension's id up front.\n✔ a never-resolving tracePost does not delay hear() returning (22.596584ms)\n✔ appendTrace adds ts and appends JSON lines (one event or an array) (4.522958ms)\n✔ an unwritable trace dir does not throw (0.659ms)\nEXTENSION_ID is unset: pinning to the first extension that calls. Set it to pin your extension's id up front.\n✔ the server: POST /trace answers 204 (even unwritable), 403 for a foreign origin; /agent/chat writes a model event with ms (111.229584ms)\n/agent/chat failed: TimeoutError\n/agent/chat failed: TypeError\n✔ the server: malformed /trace JSON is 400, an oversized body is rejected without a write, null upstream passes through, a failed upstream still writes a model event (22.726375ms)\nℹ tests 19\nℹ suites 0\nℹ pass 19\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 2378.9625\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "2735697ffbdc37e45d8678494d18d8e2cf0c0c46",
+    "dirty": true
+  },
+  "source_hash": "7a92bb77cf9f2c2245a9843e01abfd536e22e8a06184713a3d906da6af8312da",
+  "before_hash": "7a92bb77cf9f2c2245a9843e01abfd536e22e8a06184713a3d906da6af8312da",
+  "config_hash": "bb9ba0667fe38ebc96b8e7f5a699748a71a4bbecf8fa498063a3029b1ca25c12",
+  "environment": {
+    "node": "v26.8.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "3417c70cbdf64358c3e62ee586e1227b87940a6d19609e180db36931d40aff94"
+}

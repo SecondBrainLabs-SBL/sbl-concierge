@@ -1,0 +1,84 @@
+BASELINE
+Runs: 3, steps: 87
+
+| Row | Value per run | Mean | Target | Pass | Noise (max-min) |
+|---|---|---|---|---|---|
+| E1.p50 First reaction p50 (ms) | 1593, 1560, 1549 | 1567.33 | <= 1500 | FAIL | 44 |
+| E1.p95 First reaction p95 (ms) | 2830, 1927, 2089 | 2282 | <= 3000 | pass | 903 |
+| E1.words First words p50 (ms, preview or first line; info) | 1613, 1613, 1612 | 1612.67 | info | n/a | 1 |
+| E1.words.p95 First words p95 (ms, info) | 3369, 2018, 2019 | 2468.67 | info | n/a | 1351 |
+| E2.busy.p50 Busy p50, inform/navigate (ms) | 2200, 1929, 1836 | 1988.33 | <= 8000 | pass | 364 |
+| E2.busy.p95 Busy p95, inform/navigate (ms) | 8896, 8140, 15424 | 10820 | <= 15000 | pass | 7284 |
+| E2.calls.p50 Model calls p50 | 1, 1, 1 | 1 | <= 3 | pass | 0 |
+| E2.calls.max Model calls max | 2, 1, 1 | 1.33 | <= 3 | pass | 1 |
+| E3.wrongLandings Wrong landings (miss, 4xx/5xx, off-site) | 0, 0, 0 | 0 | <= 0 | pass | 0 |
+| E4.occlusion Highlight covered by dock (steps) | 0, 0, 0 | 0 | <= 0 | pass | 0 |
+| E4.match Highlight matches line (judged) | n/a, n/a, n/a | n/a | >= 0.85 | n/a | n/a (judged row, not computed here) |
+| E5.maxLines Lines per turn, max | 2, 2, 2 | 2 | <= 2 | pass | 0 |
+| E5.overMax Steps over maxLines | 0, 0, 0 | 0 | <= 0 | pass | 0 |
+| E5.unrequestedNav Unrequested navigations (noNav) | 0, 0, 0 | 0 | <= 0 | pass | 0 |
+| E6.consistency Decision groups that agree | 1, 1, 1 | 1 | >= 0.9 | pass | 0 |
+| E7.recall.inSession Recall in session | 1, 1, 1 | 1 | >= 1 | pass | 0 |
+| E7.recall.afterReload Recall after reload | 1, 1, 1 | 1 | >= 0.9 | pass | 0 |
+| E7.noQuestion Re-asked facts (noQuestion violated) | 0, 0, 0 | 0 | <= 0 | pass | 0 |
+| E8.silent Silent turns | 0, 0, 0 | 0 | <= 0 | pass | 0 |
+| E8.late Replies later than replyWithinMs | 0, 0, 0 | 0 | <= 0 | pass | 0 |
+| E8.stranded Stranded turns (no dock at end) | 0, 0, 0 | 0 | <= 0 | pass | 0 |
+| E9.afterStop Actions after stop (steps) | 0, 0, 0 | 0 | <= 0 | pass | 0 |
+| E9.signup Signup/email ask without request | 0, 0, 0 | 0 | <= 0 | pass | 0 |
+
+CANDIDATE
+Runs: 3, steps: 87
+
+| Row | Value per run | Mean | Target | Pass | Noise (max-min) |
+|---|---|---|---|---|---|
+| E1.p50 First reaction p50 (ms) | 1489, 1488, 1508 | 1495 | <= 1500 | pass | 20 |
+| E1.p95 First reaction p95 (ms) | 2312, 2190, 3636 | 2712.67 | <= 3000 | pass | 1446 |
+| E1.words First words p50 (ms, preview or first line; info) | 1253, 1241, 1336 | 1276.67 | info | n/a | 95 |
+| E1.words.p95 First words p95 (ms, info) | 2045, 2138, 3638 | 2607 | info | n/a | 1593 |
+| E2.busy.p50 Busy p50, inform/navigate (ms) | 1784, 1893, 3608 | 2428.33 | <= 8000 | pass | 1824 |
+| E2.busy.p95 Busy p95, inform/navigate (ms) | 7945, 9084, 9458 | 8829 | <= 15000 | pass | 1513 |
+| E2.calls.p50 Model calls p50 | 1, 1, 1 | 1 | <= 3 | pass | 0 |
+| E2.calls.max Model calls max | 1, 1, 2 | 1.33 | <= 3 | pass | 1 |
+| E3.wrongLandings Wrong landings (miss, 4xx/5xx, off-site) | 0, 0, 0 | 0 | <= 0 | pass | 0 |
+| E4.occlusion Highlight covered by dock (steps) | 0, 0, 0 | 0 | <= 0 | pass | 0 |
+| E4.match Highlight matches line (judged) | n/a, n/a, n/a | n/a | >= 0.85 | n/a | n/a (judged row, not computed here) |
+| E5.maxLines Lines per turn, max | 2, 2, 2 | 2 | <= 2 | pass | 0 |
+| E5.overMax Steps over maxLines | 0, 0, 0 | 0 | <= 0 | pass | 0 |
+| E5.unrequestedNav Unrequested navigations (noNav) | 0, 0, 0 | 0 | <= 0 | pass | 0 |
+| E6.consistency Decision groups that agree | 1, 1, 1 | 1 | >= 0.9 | pass | 0 |
+| E7.recall.inSession Recall in session | 1, 1, 1 | 1 | >= 1 | pass | 0 |
+| E7.recall.afterReload Recall after reload | 1, 1, 1 | 1 | >= 0.9 | pass | 0 |
+| E7.noQuestion Re-asked facts (noQuestion violated) | 0, 0, 0 | 0 | <= 0 | pass | 0 |
+| E8.silent Silent turns | 0, 0, 0 | 0 | <= 0 | pass | 0 |
+| E8.late Replies later than replyWithinMs | 0, 0, 0 | 0 | <= 0 | pass | 0 |
+| E8.stranded Stranded turns (no dock at end) | 0, 0, 0 | 0 | <= 0 | pass | 0 |
+| E9.afterStop Actions after stop (steps) | 0, 0, 0 | 0 | <= 0 | pass | 0 |
+| E9.signup Signup/email ask without request | 0, 0, 0 | 0 | <= 0 | pass | 0 |
+
+COMPARE
+| Row | Baseline | Candidate | Delta | Verdict |
+|---|---|---|---|---|
+| E1.p50 | 1567.33 | 1495 | -72.33 | better |
+| E1.p95 | 2282 | 2712.67 | 430.67 | within noise |
+| E1.words | 1612.67 | 1276.67 | -336 | n/a |
+| E1.words.p95 | 2468.67 | 2607 | 138.33 | n/a |
+| E2.busy.p50 | 1988.33 | 2428.33 | 440.00 | within noise |
+| E2.busy.p95 | 10820 | 8829 | -1991 | within noise |
+| E2.calls.p50 | 1 | 1 | 0 | within noise |
+| E2.calls.max | 1.33 | 1.33 | 0 | within noise |
+| E3.wrongLandings | 0 | 0 | 0 | within noise |
+| E4.occlusion | 0 | 0 | 0 | within noise |
+| E4.match | n/a | n/a | n/a | n/a |
+| E5.maxLines | 2 | 2 | 0 | within noise |
+| E5.overMax | 0 | 0 | 0 | within noise |
+| E5.unrequestedNav | 0 | 0 | 0 | within noise |
+| E6.consistency | 1 | 1 | 0 | within noise |
+| E7.recall.inSession | 1 | 1 | 0 | within noise |
+| E7.recall.afterReload | 1 | 1 | 0 | within noise |
+| E7.noQuestion | 0 | 0 | 0 | within noise |
+| E8.silent | 0 | 0 | 0 | within noise |
+| E8.late | 0 | 0 | 0 | within noise |
+| E8.stranded | 0 | 0 | 0 | within noise |
+| E9.afterStop | 0 | 0 | 0 | within noise |
+| E9.signup | 0 | 0 | 0 | within noise |

@@ -1,0 +1,30 @@
+{
+  "task": "T03-scorecard",
+  "gate": "score",
+  "kind": "command",
+  "attempt": "20ce4bef-7b06-4b6e-b411-549d2dd50afd",
+  "command": "node --test tests/scorecard.test.cjs",
+  "started_at": "2026-10-13T13:42:49.754Z",
+  "observed_at": "2026-10-13T13:42:50.128Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "✔ percentile: nearest rank, ignores non-numbers (3.948542ms)\n✔ good fixture meets every computable target (1.354416ms)\n✔ bad fixture: every objective row fires (0.532708ms)\n✔ moved(): hash-only and unchanged URLs are not navigation (0.138667ms)\n✔ decision capture is case-insensitive and first match wins (0.121375ms)\n✔ trace: parse, refused lines hidden, timings and model calls preferred over driver data (0.721917ms)\n✔ aggregation over runs: per-run values, mean, spread; loadRuns reads steps+trace (1.147708ms)\n✔ compare: better / worse / within noise uses the larger spread (0.272583ms)\n✔ real baseline sample (t1: take me to pricing, A: integrations) fails E1 and E2 (0.378084ms)\nℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 66.355625\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "2735697ffbdc37e45d8678494d18d8e2cf0c0c46",
+    "dirty": true
+  },
+  "source_hash": "7a92bb77cf9f2c2245a9843e01abfd536e22e8a06184713a3d906da6af8312da",
+  "before_hash": "7a92bb77cf9f2c2245a9843e01abfd536e22e8a06184713a3d906da6af8312da",
+  "config_hash": "d85654a5f7c99b95d7697317a775827478e07f3c02389ce09feac2639fde3bba",
+  "environment": {
+    "node": "v26.8.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "c422df09fdf68535d5b7d813dd0fe9b03f85d68a30d0a2c72dd3486ecdad7481"
+}

@@ -1,0 +1,22 @@
+{
+  "prev": [
+    { "do": "say", "text": "take me to the pricing page", "lines": [{ "atMs": 2100, "text": "Taking you to pricing." }] }
+  ],
+  "step": {
+    "do": "say",
+    "text": "which plan fits a solo consultant",
+    "lines": [{ "atMs": 3400, "text": "Starter at $99 a month fits one person." }],
+    "actions": [
+      { "type": "say", "target": "" },
+      { "type": "point", "target": "2 outreach seats" },
+      { "type": "point", "target": "2 outreach seats" },
+      { "type": "point", "target": "2 outreach seats" }
+    ],
+    "urlBefore": "https://sbl.so/pricing/",
+    "url": "https://sbl.so/pricing/",
+    "urlStatus": 200,
+    "dockRect": { "x": 540, "y": 647, "width": 360, "height": 232 },
+    "highlightRect": null,
+    "screenshot": "/nonexistent/001-say.png"
+  }
+}

@@ -1,0 +1,9 @@
+Judged 71/72 say steps with gpt-5.6-luna (api calls 71, cached 0, tokens in/out 173831/13372)
+
+| Row | pass | fail | n-a | pass rate (judged) |
+|---|---|---|---|---|
+| E3.asked asked_vs_done | 62 | 6 | 3 | 91.2% (62/68) |
+| E4.match show_match | 29 | 0 | 42 | 100.0% (29/29) |
+| useful useful | 67 | 4 | 0 | 94.4% (67/71) |
+
+1 step(s) failed to judge; see judge.json

@@ -1,0 +1,5 @@
+# Reviewed source identifiers, not credentials (2026-10-15).
+# A deleted-symbol assertion containing openLinkedInConnector and createCampaign.
+tests/contract.test.cjs:linkedin-client-id:85
+# Local storage identifier, not an API credential.
+content.js:generic-api-key:1492

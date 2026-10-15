@@ -1,0 +1,30 @@
+{
+  "task": "T73-proactive-welcome",
+  "gate": "replay",
+  "kind": "command",
+  "attempt": "158dc4ab-90ca-4f43-bb30-30b7a5e6e635",
+  "command": "node tools/experience/gate.mjs founder-replay",
+  "started_at": "2026-10-15T08:57:43.019Z",
+  "observed_at": "2026-10-15T08:57:45.244Z",
+  "exit_code": 1,
+  "signal": null,
+  "stdout": "FAIL founder-replay: overMax=1 in /path/to/sbl-concierge/var/experience/latest\n",
+  "stderr": "",
+  "failure": "command-failed",
+  "receipt": null,
+  "revision": {
+    "commit": "90b4f66665b8ce0c8b3e98092bc161e1912cfea6",
+    "dirty": true
+  },
+  "source_hash": "862ca13f4b60cd32eca50bbcd634cd70dcdbcd7f5630100772f6929fba16e082",
+  "before_hash": "862ca13f4b60cd32eca50bbcd634cd70dcdbcd7f5630100772f6929fba16e082",
+  "config_hash": "1a8a2ff65d91df78ea50010d8327d4848f823d47dec492a12fcd92da64065b67",
+  "environment": {
+    "node": "v26.8.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "981b86c17831072fa2a1f85399d56d69c7a627f86c4933e9b1a9507b0d84a6ea"
+}

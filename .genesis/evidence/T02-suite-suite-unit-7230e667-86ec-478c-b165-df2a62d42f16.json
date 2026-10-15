@@ -1,0 +1,30 @@
+{
+  "task": "T02-suite",
+  "gate": "suite-unit",
+  "kind": "command",
+  "attempt": "7230e667-86ec-478c-b165-df2a62d42f16",
+  "command": "node --test tests/experience.test.cjs",
+  "started_at": "2026-10-13T13:42:48.637Z",
+  "observed_at": "2026-10-13T13:42:48.986Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "✔ every persona file validates (known keys, regexes compile, hard limits) (4.197375ms)\n✔ validator rejects unknown keys, bad regexes, hard-limit wording, foreign emails (0.507541ms)\n✔ dev and holdout share no identical say text (0.877125ms)\n✔ replay persona is the founder's visitor lines in order, every one must be answered in at most 2 lines (0.223625ms)\n✔ isQuiet: needs 5 s with no line, no call in flight, dock not busy (1.105292ms)\n✔ expireInflight drops requests at the 60 s cap only (0.227ms)\n✔ rect overlap and union geometry (0.216792ms)\nℹ tests 7\nℹ suites 0\nℹ pass 7\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 68.8055\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "2735697ffbdc37e45d8678494d18d8e2cf0c0c46",
+    "dirty": true
+  },
+  "source_hash": "7a92bb77cf9f2c2245a9843e01abfd536e22e8a06184713a3d906da6af8312da",
+  "before_hash": "7a92bb77cf9f2c2245a9843e01abfd536e22e8a06184713a3d906da6af8312da",
+  "config_hash": "9f0abad8c1549e2edf26d5065d4f7fafde4ac5bd0ddd4f6739dc227952cf45d8",
+  "environment": {
+    "node": "v26.8.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "0c97bcb333b04386248bff211796bbbad8ca8762708ae62849a499089f1ca2e2"
+}

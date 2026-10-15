@@ -1,0 +1,95 @@
+{
+  "id": "returner",
+  "description": "States facts, gets a recommendation, reloads, asks where we were.",
+  "start": "https://sbl.so/",
+  "steps": [
+    {
+      "do": "say",
+      "text": "I'm Dana, I run a recruiting agency with 5 recruiters.",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noNav": true,
+        "noSignup": true
+      }
+    },
+    {
+      "do": "say",
+      "text": "which plan would you pick for us",
+      "tags": [],
+      "expect": {
+        "class": "inform",
+        "noSignup": true,
+        "decisionGroup": "plan",
+        "decisionPattern": "\\b(Starter|Pro|Elite)\\b"
+      }
+    },
+    {
+      "do": "say",
+      "text": "ok I'll think about it",
+      "tags": [],
+      "expect": {
+        "class": "chitchat",
+        "maxLines": 1,
+        "noNav": true,
+        "noSignup": true
+      }
+    },
+    {
+      "do": "reload",
+      "tags": [
+        "afterReload"
+      ],
+      "expect": {
+        "noNav": true,
+        "noSignup": true
+      }
+    },
+    {
+      "do": "say",
+      "text": "where were we?",
+      "tags": [
+        "afterReload"
+      ],
+      "expect": {
+        "class": "inform",
+        "noNav": true,
+        "noSignup": true,
+        "noQuestion": true,
+        "recalls": [
+          "recruit"
+        ]
+      }
+    },
+    {
+      "do": "say",
+      "text": "and which plan did you suggest?",
+      "tags": [
+        "afterReload"
+      ],
+      "expect": {
+        "class": "inform",
+        "noNav": true,
+        "noSignup": true,
+        "decisionGroup": "plan",
+        "decisionPattern": "\\b(Starter|Pro|Elite)\\b"
+      }
+    },
+    {
+      "do": "say",
+      "text": "how many recruiters did I say?",
+      "tags": [
+        "afterReload"
+      ],
+      "expect": {
+        "class": "inform",
+        "noNav": true,
+        "noSignup": true,
+        "noQuestion": true,
+        "recalls": [
+          "\\b(5|five)\\b"
+        ]
+      }
+    }
+  ]
+}
